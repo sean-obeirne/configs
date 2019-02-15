@@ -168,3 +168,6 @@ bindsym $mod+Shift+x exec i3lock
 
 #start up polybar on reset
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+#enable compton for transparent polybar/terminal
+exec_always compton &
