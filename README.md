@@ -1,6 +1,8 @@
 # configs
 Configuration files I use for my linux machines
 
-so far this repo contains a config file for:
+I can run "sh getfiles.sh" to pull my config files from their locations to this repo
+
+So far this repo contains my config files for:
 i3
 polybar
