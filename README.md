@@ -6,6 +6,7 @@ I can run "sh getfiles.sh" to pull my config files from their locations to this 
 So far this repo contains my config files for:
 i3 (both laptop and desktop versions)
 polybar (both laptop and desktop versions)
+vimrc
 
 In general, laptop config files attempt to use less battery and are more utility-focused, not so much on looks. Notable changes:
  - no compton is used for transparency or blurring effect

@@ -5,3 +5,6 @@ sudo cp ~/.config/i3/config ./i3conf
 
 #get the polybar config file
 sudo cp ~/.config/polybar/config ./polybarconf
+
+#get vimrc
+sudo cp /etc/vim/vimrc ./vimrc
