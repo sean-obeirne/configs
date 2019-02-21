@@ -121,6 +121,9 @@ bindsym $mod+p exec pavucontrol &
 #discord
 bindsym $mod+c exec discord &
 
+#slack
+bindsym $mod+s exec slack &
+
 
 
 # start up polybar on reset
