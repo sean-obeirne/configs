@@ -86,16 +86,16 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 #shortcuts to resize windows
-bindsym $mod+Shift+o resize shrink width 5 px or 5 ppt
+bindsym $mod+Shift+y resize shrink width 5 px or 5 ppt
 bindsym $mod+Shift+i resize grow height 5 px or 5 ppt
 bindsym $mod+Shift+u resize shrink height 5 px or 5 ppt
-bindsym $mod+Shift+y resize grow width 5 px or 5 ppt
+bindsym $mod+Shift+o resize grow width 5 px or 5 ppt
 
 # lock i3
 bindsym $mod+Shift+x exec i3lock
 
 # reboot computer
-#bindsym $mod+Shift+BackSpace exec shutdown now
+bindsym $mod+BackSpace exec reboot
 
 # shutdown computer
 bindsym $mod+Shift+BackSpace exec shutdown now
