@@ -95,7 +95,7 @@ bindsym $mod+Shift+o resize grow width 5 px or 5 ppt
 bindsym $mod+Shift+x exec i3lock
 
 # reboot computer
-bindsym $mod+BackSpace exec reboot
+bindsym $mod+BackSpace exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # shutdown computer
 bindsym $mod+Shift+BackSpace exec shutdown now
@@ -115,6 +115,19 @@ bindsym $mod+p exec pavucontrol &
 
 #audacity
 bindsym $mod+a exec audacity &
+
+#discord
+bindsym $mod+c exec discord &
+
+#slack
+bindsym $mod+s exec slack &
+
+#okular
+bindsym $mod+o exec okular &
+
+#intellij
+bindsym $mod+i exec idea.sh &
+
 
 
 
