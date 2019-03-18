@@ -102,6 +102,9 @@ bindsym $mod+Shift+x exec i3lock
 # shutdown computer
 bindsym $mod+Shift+BackSpace exec shutdown now
 
+#activate wifi on RIT network
+bindsym $mod+n exec sh ~/network.sh
+
 
 
 #####--APPLICATION LAUNCHER SHORTCUTS--#####
