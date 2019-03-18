@@ -4,9 +4,13 @@
 
 set $mod Mod1
 
-#Adds gaps to i3
+#Adds gaps to i3 by default
 gaps inner 35
 gaps outer 0 
+#Adds gaps back in
+bindsym $mod+Shift+v gaps inner all set 35
+#Remove gaps
+bindsym $mod+v gaps inner all set 0
 
 #Remove window borders
 for_window [class=".*"] border pixel 0
