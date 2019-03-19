@@ -129,8 +129,9 @@ bindsym $mod+s exec slack &
 #okular
 bindsym $mod+o exec okular &
 
+#TODO fix this
 #intellij
-bindsym $mod+i exec idea.sh &
+#bindsym $mod+i exec cd ~/IntelliJ/idea-IC-183.5429.30/bin; bash idea.sh &
 
 
 
