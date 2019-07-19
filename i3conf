@@ -108,8 +108,8 @@ bindsym $mod+Shift+BackSpace exec shutdown now
 
 #####--APPLICATION LAUNCHER SHORTCUTS--#####
 
-#chromium-browser
-bindsym $mod+b exec chromium-browser &
+#firefox
+bindsym $mod+b exec firefox &
 
 #gimp
 bindsym $mod+g exec gimp &
@@ -123,8 +123,8 @@ bindsym $mod+a exec audacity &
 #discord
 bindsym $mod+c exec discord &
 
-#slack
-bindsym $mod+s exec slack &
+#spotify
+bindsym $mod+s exec spotify &
 
 #okular
 bindsym $mod+o exec okular &
