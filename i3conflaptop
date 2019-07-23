@@ -7,8 +7,13 @@
 set $mod Mod1
 
 #Adds gaps to i3 - optional, not necessary
-#gaps inner 35
+#gaps inner 5
 #gaps outer 0 
+#Adds gaps back in
+#bindsym $mod+Shift+v gaps inner all set 5
+#Remove gaps
+#bindsym $mod+v gaps inner all set 0
+
 
 #Remove window borders - optional, not necessary
 for_window [class=".*"] border pixel 0
@@ -109,8 +114,8 @@ bindsym $mod+n exec sh ~/network.sh
 
 #####--APPLICATION LAUNCHER SHORTCUTS--#####
 
-#chromium-browser
-bindsym $mod+b exec chromium-browser &
+#firefox
+bindsym $mod+b exec firefox &
 
 #gimp
 bindsym $mod+g exec gimp &
@@ -124,8 +129,8 @@ bindsym $mod+p exec pavucontrol &
 #discord
 bindsym $mod+c exec discord &
 
-#slack
-bindsym $mod+s exec slack &
+#spotify
+bindsym $mod+s exec spotify &
 
 
 
