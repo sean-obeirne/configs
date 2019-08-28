@@ -132,6 +132,9 @@ bindsym $mod+c exec discord &
 #spotify
 bindsym $mod+s exec spotify &
 
+#slack
+bindsym $mod+Shift+s exec slack &
+
 
 
 # start up polybar on reset
