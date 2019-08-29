@@ -99,7 +99,7 @@ bindsym $mod+Shift+u resize shrink height 5 px or 5 ppt
 bindsym $mod+Shift+y resize grow width 5 px or 5 ppt
 
 # lock i3
-bindsym $mod+Shift+x exec i3lock
+bindsym $mod+Shift+x exec i3lock -c 000000
 
 # reboot computer
 bindsym $mod+Shift+r exec reboot
