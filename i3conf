@@ -135,6 +135,9 @@ bindsym $mod+o exec okular &
 
 
 
+#start up wireless internet connection
+exec_always wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant.conf
+exec_always dhclient wlp8s0
 
 # start up polybar on reset
 exec_always killall polybar
