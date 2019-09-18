@@ -129,14 +129,16 @@ bindsym $mod+s exec spotify &
 #okular
 bindsym $mod+o exec okular &
 
-#TODO fix this
+#TODO
 #intellij
 #bindsym $mod+i exec cd ~/IntelliJ/idea-IC-183.5429.30/bin; bash idea.sh &
 
 
-
+#TODO
 #start up wireless internet connection
-exec_always wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant.conf
+exec_always killall wpa_supplicant
+exec_always killall dhclient
+exec_always 'wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant.conf'
 exec_always dhclient wlp8s0
 
 # start up polybar on reset
