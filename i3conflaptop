@@ -99,9 +99,9 @@ bindsym $mod+Shift+u resize shrink height 5 px or 5 ppt
 bindsym $mod+Shift+y resize grow width 5 px or 5 ppt
 
 #Adds gaps back in
-bindsym $mod+Shift+v gaps inner all set 5
+#bindsym $mod+Shift+v gaps inner all set 5
 #Remove gaps
-bindsym $mod+v gaps inner all set 0
+#bindsym $mod+v gaps inner all set 0
 
 # lock i3
 bindsym $mod+Shift+x exec i3lock -c 000000
@@ -112,13 +112,30 @@ bindsym $mod+Shift+r exec reboot
 # shutdown computer
 bindsym $mod+Shift+BackSpace exec shutdown now
 
-#activate wifi on RIT network
+# activate wifi on RIT network
 bindsym $mod+n exec sh ~/network.sh
 
-#set brightness level to 2
-#bindsym $mod+v exec sudo ~/scripts/brightness 2
+# set brightness level to 2
+#bindsym $mod+v exec sudo sh ~/bin/brightness.sh 2
+#bindsym $mod+v exec sudo sh ~/bin/brightness.sh 2
 
+# OPEN SETUP FOR CLASSES
+# OS
+#bindsym $mod+Shift+g workspace 4; exec gnome-terminal --working-directory=/home/sean/classes/OS/; exec firefox --new-window https://mycourses.rit.edu/d2l/home/847281; workspace 5; exec gnome-terminal --working-directory=/home/sean/classes/DCN/; exec firefox --new-window https://mycourses.rit.edu/d2l/home/847275; workspace 6; exec gnome-terminal --working-directory=/home/sean/classes/AI/; exec firefox --new-window https://mycourses.rit.edu/d2l/home/847267; workspace 7; exec gnome-terminal --working-directory=/home/sean/classes/GT/; exec firefox --new-window https://mycourses.rit.edu/d2l/home/843293; workspace 8; exec gnome-terminal --working-directory=/home/sean/classes/Photos/; exec firefox --new-window https://mycourses.rit.edu/d2l/home/840709
 
+exec --no-startup-id i3-msg "workspace 4; gnome-terminal --working-directory=/home/sean/classes/OS/"
+
+# DCN
+#bindsym $mod+Shift+g 
+
+# AI 
+#bindsym $mod+Shift+g 
+
+# GT
+#bindsym $mod+Shift+g 
+
+# Photos
+#bindsym $mod+Shift+g 
 
 #####--APPLICATION LAUNCHER SHORTCUTS--#####
 
