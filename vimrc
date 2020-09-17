@@ -46,9 +46,10 @@ endif
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
-if has("autocmd")
-  filetype plugin indent on
-endif
+"if has("autocmd")
+"  filetype plugin indent on
+"endif
+filetype plugin indent off
 
 " Auto compile tex documents
 autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | redraw!
