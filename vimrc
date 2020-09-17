@@ -5,6 +5,13 @@
 " It is recommended to make changes after sourcing debian.vim since it alters
 " the value of the 'compatible' option.
 
+
+" Use vim-plug to import plugins
+"call plug#begin('~/.vim/plugged')
+"Plug 'lervag/vimtex'
+"call plug#end()
+
+
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
@@ -42,6 +49,9 @@ endif
 if has("autocmd")
   filetype plugin indent on
 endif
+
+" Auto compile tex documents
+autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | redraw!
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
