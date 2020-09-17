@@ -7,4 +7,4 @@ sudo cp ~/.config/i3/config ./i3conflaptop
 sudo cp ~/.config/polybar/config ./polybarconflaptop
 
 #get vimrc
-sudo cp /etc/vim/vimrc ./vimrc
+sudo cp ~/.vimrc ./vimrc
