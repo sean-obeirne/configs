@@ -155,8 +155,8 @@ bindsym $mod+s exec spotify &
 #make it open on workspace 9, on second monitor
 assign [class="^spotify$"] 9
 
-#okular
-bindsym $mod+o exec okular &
+#evince
+bindsym $mod+e exec evince &
 
 #TODO
 #intellij

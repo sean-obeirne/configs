@@ -135,6 +135,8 @@ bindsym $mod+s exec spotify &
 #slack
 bindsym $mod+Shift+s exec slack &
 
+#evince
+bindsym $mod+e exec evince &
 
 
 # start up polybar on reset
