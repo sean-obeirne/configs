@@ -2,7 +2,15 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# I use alt as my mod key
 set $mod Mod1
+
+# Primary and secondary monitors
+set $primary DP-2
+set $secondary HDMI-0
+
+# My directory for my custom scripts
+set $scripts /home/sean/scripts
 
 #Adds gaps to i3 by default
 gaps inner 35
@@ -58,6 +66,18 @@ bindsym $mod+t split toggle
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
+# assign workspaces to specific monitors
+workspace 1 output $primary
+workspace 2 output $primary
+workspace 3 output $primary
+workspace 4 output $primary
+workspace 5 output $primary
+workspace 6 output $primary
+workspace 7 output $primary
+workspace 8 output $primary
+workspace 9 output $secondary
+workspace 10 output $secondary
+
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -105,8 +125,15 @@ bindsym $mod+Shift+r exec reboot
 bindsym $mod+Shift+BackSpace exec shutdown now
 
 
+####--SYSTEM STARTUP PROCESSES--####
 
-#####--APPLICATION LAUNCHER SHORTCUTS--#####
+exec --no-startup-id $scripts/dual-screen
+exec --no-startup-id $scripts/bg-set
+#exec --no-startup-id sudo $scripts/internet #outdated - for wifi
+#exec_always $scripts/notsh
+
+
+####--APPLICATION LAUNCHER SHORTCUTS--####
 
 #firefox
 bindsym $mod+b exec firefox &
@@ -125,9 +152,11 @@ bindsym $mod+c exec discord &
 
 #spotify
 bindsym $mod+s exec spotify &
+#make it open on workspace 9, on second monitor
+assign [class="^spotify$"] 9
 
-#okular
-bindsym $mod+o exec okular &
+#evince
+bindsym $mod+e exec evince &
 
 #TODO
 #intellij
@@ -136,10 +165,10 @@ bindsym $mod+o exec okular &
 
 #TODO
 #start up wireless internet connection
-exec_always killall wpa_supplicant
-exec_always killall dhclient
-exec_always 'wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant.conf'
-exec_always dhclient wlp8s0
+#exec_always killall wpa_supplicant
+#exec_always killall dhclient
+#exec_always 'wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant.conf'
+#exec_always dhclient wlp8s0
 
 # start up polybar on reset
 exec_always killall polybar
