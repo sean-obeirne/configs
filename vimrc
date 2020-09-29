@@ -6,12 +6,6 @@
 " the value of the 'compatible' option.
 
 
-" Use vim-plug to import plugins
-"call plug#begin('~/.vim/plugged')
-"Plug 'lervag/vimtex'
-"call plug#end()
-
-
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
