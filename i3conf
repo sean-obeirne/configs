@@ -10,7 +10,7 @@ set $primary DP-2
 set $secondary HDMI-0
 
 # My directory for my custom scripts
-set $scripts /home/sean/scripts
+set $scripts /home/sean/bin
 
 #Adds gaps to i3 by default
 gaps inner 35
