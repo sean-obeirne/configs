@@ -2,23 +2,23 @@
 
 if hostname | grep -q black
 then
-    echo BLACK
+    #echo black
     #get the i3 config file
-#   sudo cp ~/.config/i3/config ./i3conflaptop
+    sudo cp ~/.config/i3/config ./i3conflaptop
 
     #get the polybar config file
-#   sudo cp ~/.config/polybar/config ./polybarconflaptop
+    sudo cp ~/.config/polybar/config ./polybarconflaptop
 
     #get vimrc
-#   sudo cp ~/.vimrc ./vimrc
+    sudo cp ~/.vimrc ./vimrc
 else
-    echo MOUNTAINS
+    #echo mountains
     #get the i3 config file
-#   sudo cp ~/.config/i3/config ./i3conf
+    sudo cp ~/.config/i3/config ./i3conf
 
     #get the polybar config file
-#   sudo cp ~/.config/polybar/config ./polybarconf
+    sudo cp ~/.config/polybar/config ./polybarconf
 
     #get vimrc
-#   sudo cp ~/.vimrc ./vimrc
+    sudo cp ~/.vimrc ./vimrc
 fi
