@@ -155,6 +155,10 @@ bindsym $mod+s exec spotify &
 #make it open on workspace 9, on second monitor
 assign [class="^spotify$"] 9
 
+#screenshot without specific name
+bindsym Print exec --no-startup-id /usr/bin/flameshot gui
+#bindsym Print exec --no-startup-id $scripts/custom-screenshot
+
 #evince
 bindsym $mod+e exec evince &
 
