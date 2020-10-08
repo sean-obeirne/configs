@@ -2,7 +2,7 @@
 
 if hostname | grep -q black
 then
-    echo black
+    #echo black
     #get the i3 config file
     sudo cp ~/.config/i3/config ./i3conflaptop
 
@@ -16,7 +16,7 @@ then
     sudo cp ~/.vimrc ./vimrc
 elif hostname | grep -q arcgap
 then
-    echo arcgap
+    #echo arcgap
     #get the i3 config file
     sudo cp ~/.config/i3/config ./i3confarch
 
@@ -29,7 +29,7 @@ then
     #get vimrc
     sudo cp ~/.vimrc ./vimrc
 else
-    echo mountains
+    #echo mountains
     #get the i3 config file
     sudo cp ~/.config/i3/config ./i3conf
 
