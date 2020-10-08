@@ -21,6 +21,8 @@ then
 
     sudo cp ./Xresourcesarch ~/.Xresources
 
+    sudo cp ./picomarch ~/.config/picom.conf
+
     sudo cp ./vimrc ~/.vimrc
 else
     #echo mountains

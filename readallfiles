@@ -29,6 +29,9 @@ then
     #get .Xresources
     sudo cp ~/.Xresources ./Xresourcesarch
 
+    #get picom
+    sudo cp ~/.config/picom.conf ./picomarch
+
     #get vimrc
     sudo cp ~/.vimrc ./vimrc
 else
