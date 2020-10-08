@@ -1,0 +1,43 @@
+! special
+*.foreground:   #dfdbe5
+*.background:   #040307
+*.cursorColor:  #dfdbe5
+
+! black
+*.color0:       #09060d
+*.color8:       #a0b275
+
+! red
+*.color1:       #17131f
+*.color9:       #a1b66e
+
+! green
+*.color2:       #2b2335
+*.color10:      #daa4bc
+
+! yellow
+*.color3:       #453b54
+*.color11:      #c7b8df
+
+! blue
+*.color4:       #66587c
+*.color12:      #aac26e
+
+! magenta
+*.color5:       #8c7ea1
+*.color13:      #dba277
+
+! cyan
+*.color6:       #b5acc3
+*.color14:      #95d5ee
+
+! white
+*.color7:       #e4e1e9
+*.color15:      #dacbf2
+
+! URxvt.letterSpace: -5
+! URxvt.font: ttf:Monaco_Linux.ttf:size=10
+! URxvt.font: xft:Monaco_Linux.ttf:size=10
+! URxvt.font: xft:monaco:size=8
+URxvt.font: xft:monospace:size=10
+URxvt*saveLines: 0

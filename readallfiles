@@ -26,6 +26,9 @@ then
     #get bashrc
     sudo cp ~/.bashrc ./bashrcarch
 
+    #get .Xresources
+    sudo cp ~/.Xresources ./Xresourcesarch
+
     #get vimrc
     sudo cp ~/.vimrc ./vimrc
 else

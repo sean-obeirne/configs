@@ -19,6 +19,8 @@ then
 
     sudo cp ./bashrcarch ~/.bashrc
 
+    sudo cp ./Xresourcesarch ~/.Xresources
+
     sudo cp ./vimrc ~/.vimrc
 else
     #echo mountains
