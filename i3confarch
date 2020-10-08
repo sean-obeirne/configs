@@ -7,13 +7,15 @@
 set $mod Mod1
 
 #Adds gaps to i3 - optional, not necessary
-#gaps inner 5
-#gaps outer 0 
+gaps inner 15
+gaps outer 10 
 #Adds gaps back in
-#bindsym $mod+Shift+ gaps inner all set 5
+bindsym $mod+Shift+v gaps inner all set 15
 #Remove gaps
-#bindsym $mod+ gaps inner all set 0
+bindsym $mod+v gaps inner all set 0
 
+# set wallpaper
+exec feh --bg-scale pictures/wallpapers/foggylake.png
 
 #Remove window borders - optional, not necessary
 for_window [class=".*"] border pixel 0
@@ -98,11 +100,6 @@ bindsym $mod+Shift+i resize grow height 5 px or 5 ppt
 bindsym $mod+Shift+u resize shrink height 5 px or 5 ppt
 bindsym $mod+Shift+y resize grow width 5 px or 5 ppt
 
-#Adds gaps back in
-#bindsym $mod+Shift+v gaps inner all set 5
-#Remove gaps
-#bindsym $mod+v gaps inner all set 0
-
 # lock i3
 bindsym $mod+Shift+x exec i3lock -c 000000
 
@@ -111,9 +108,6 @@ bindsym $mod+Shift+r exec reboot
 
 # shutdown computer
 bindsym $mod+Shift+BackSpace exec shutdown now
-
-# activate wifi on RIT network
-#bindsym $mod+n exec sh ~/network.sh
 
 # increment/decrement brightness
 #bindsym $mod+Shift+m exec --no-startup-id sudo crementbrightness -i
@@ -168,7 +162,11 @@ bindsym $mod+b exec firefox &
 exec_always killall polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-bindsym $mod+Shift+a exec firefox --new-window https://wiki.archlinux.org/
+#open archwiki
+bindsym $mod+Shift+a exec firefox https://wiki.archlinux.org/
+
+# turn on picom
+exec_always --no-startup-id picom -b
 
 # enable compton for transparent polybar/terminal, this is disabled in lapi3 because of battery consumption
 #exec_always killall compton
