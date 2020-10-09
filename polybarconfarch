@@ -1,9 +1,11 @@
 ;;Sean O'Berne's Arch laptop polybar config file
 
 [colors]
-background = #af1e2137
-foreground = #e3eaf3
+background = #bf000000
+foreground = ${xrdb:color7}
+;primary = ${xrdb:color5}
 primary = #02c084
+;secondary = ${xrdb:color5}
 secondary = #65a2d9
 tertiary = #d07ef2
 fourth = #e5c246
@@ -26,8 +28,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 1
 
-font-0 = Hack Nerd Font:pixelsize=11:antialias=true;2.5
-font-1 = Hack Nerd Font:style=Regular:pixelsize=17:antialias=true;3
+font-0 = monospace:pixelsize=12:antialias=true;2.5
+font-1 = Hack Nerd Font:pixelsize=11:antialias=true;2.5
+font-2 = Hack Nerd Font:style=Regular:pixelsize=17:antialias=true;3
 
 modules-left = i3
 modules-center = xwindow
@@ -81,11 +84,13 @@ label-focused-foreground = ${colors.fourth}
 label-focused-padding = 1
 
 label-unfocused = ${self.label-focused}
-label-unfocused-foreground = #0a7383
+;label-unfocused-foreground = #0a7383
+label-unfocused-foreground = ${xrdb:color5}
 label-unfocused-padding = ${self.label-focused-padding}
 
 label-visible = ${self.label-focused}
-label-visible-foreground = #0a7383
+;label-visible-foreground = #0a7383
+label-visible-foreground = ${xrdb:color5}
 label-visible-padding = ${self.label-focused-padding}
 
 label-urgent = ${self.label-focused}
@@ -142,10 +147,10 @@ label = %date%%time%
 [module/audio]
 type = internal/pulseaudio
 
-format-volume = <ramp-volume>
+format-volume = <ramp-volume> <label-volume>
 label-volume-foreground = ${colors.secondary}
 ramp-volume-foreground = ${colors.secondary}
-label-volume =
+label-volume = %percentage%%
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -161,9 +166,11 @@ battery = BAT1
 adapter = ADP1
 full-at = 98
 
-format-charging = <ramp-capacity>
-format-discharging = <ramp-capacity>
+format-charging = <ramp-capacity> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
 
+label-charging = %percentage%%
+label-discharging = %percentage%%
 label-full = 
 label-full-foreground = ${colors.fourth}
 
@@ -179,7 +186,6 @@ ramp-capacity-8 = 
 ramp-capacity-9 = 
 ramp-capacity-foreground = ${colors.fourth}
 
-label-discharging =
 label-discharging-foreground = ${colors.fourth}
 label-charging-foreground = ${colors.fourth}
 

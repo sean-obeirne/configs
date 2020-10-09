@@ -116,6 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+# Not supported in the "fish" shell.
+#(cat ~/.cache/wal/sequences &)
+
 # build PATH
 export PATH="/home/sean/bin:$PATH"
 
