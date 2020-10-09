@@ -119,23 +119,32 @@ fi
 # build PATH
 export PATH="/home/sean/bin:$PATH"
 
-# custom aliases
+
+### Custom Aliases ###
+# /home/sean/bin
 alias sl='sudo brightness'
 alias kl='sudo backlight'
 alias cb='sudo crementbrightness'
 alias sd='sudo '
 alias ss='cs-ssh.sh'
-alias ssm='ssh-mountains'
+alias ssm='ssh-mountains.sh'
 alias stm='sync-to-mountains'
-alias myc='firefox https://mycourses.rit.edu/d2l/home'
-alias mycn='firefox --new-window https://mycourses.rit.edu/d2l/home'
-alias uu='sudo apt update && sudo apt upgrade'
+
+# package manager
+alias uu='sudo pacman -Syu'
+alias ins='sudo pacman -S '
+alias rem='sudo pacman -R '
+alias ains='yay -S '
+
+# git shortcuts
 alias pul='git pull '
 alias pus='git push'
 alias com='git commit -m '
 alias gad='git add '
 alias gadall='git add *'
 alias gst='git status'
+
+# RC editing
 alias vrc='sudo vim ~/.vimrc'
 alias brc='vim ~/.bashrc; source ~/.bashrc'
 alias irc='vim ~/.config/i3/config'
@@ -144,6 +153,10 @@ alias crc='vim ~/.config/picom.conf'
 alias xrc='vim ~/.Xresources; xrdb ~/.Xresources'
 alias src='source ~/.bashrc'
 alias cdconf='cd ~/documents/configs'
+
+# misc. Utility
 alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
+alias myc='firefox https://mycourses.rit.edu/d2l/home'
+alias mycn='firefox --new-window https://mycourses.rit.edu/d2l/home'
