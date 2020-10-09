@@ -1,7 +1,7 @@
 ;;Sean O'Berne's Arch laptop polybar config file
 
 [colors]
-background = #bf000000
+background = #6f000000
 foreground = ${xrdb:color7}
 ;primary = ${xrdb:color5}
 primary = #02c084
@@ -34,22 +34,21 @@ font-2 = Hack Nerd Font:style=Regular:pixelsize=17:antialias=true;3
 
 modules-left = i3
 modules-center = xwindow
-modules-right = filesystem audio wlan battery date powermenu
-
+modules-right = filesystem cpu memory audio wlan battery date
 cursor-click = pointer
 cursor-scroll = ns-resize
 
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:25:...%
+label = %title:0:60:...%
 
 
 [module/filesystem]
 type = internal/fs
 interval = 25111
 mount-0 = /
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#909090}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground}
 
@@ -142,6 +141,22 @@ time-alt = "%H:%M:%S"
 format-prefix-foreground = ${colors.foreground}
 format-underline = #0a6cf5
 label = %date%%time%
+
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = 
+format-prefix-foreground = #bb2222
+label = " %percentage:2%%"
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = 
+format-prefix-foreground = #bb11bb
+
+label = " %percentage_used:2%%" 
 
 
 [module/audio]
