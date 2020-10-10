@@ -151,7 +151,8 @@ alias gadall='git add *'
 alias gst='git status'
 
 # RC editing
-alias vrc='sudo vim ~/.vimrc'
+alias vrc='vim ~/.vimrc'
+alias vplug='vim +PluginInstall +qall'
 alias brc='vim ~/.bashrc; source ~/.bashrc'
 alias irc='vim ~/.config/i3/config'
 alias prc='sudo vim ~/.config/polybar/config'
