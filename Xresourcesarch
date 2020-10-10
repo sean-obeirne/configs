@@ -67,5 +67,5 @@ XClock*secondColor: rgba:cc/e2/e9/ff
 ! Set depth to make transparency work.
 URxvt*depth: 32
 
-URxvt.font: xft:monospace:size=12
+URxvt.font: xft:monospace:size=12,xft:Droid Sans Mono for Powerline:size=12
 URxvt*saveLines: 0
