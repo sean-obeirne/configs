@@ -125,6 +125,7 @@ fi
 # build PATH
 export PATH="/home/sean/bin:$PATH"
 
+
 ### Custom Aliases ###
 # /home/sean/bin
 alias sl='sudo brightness'

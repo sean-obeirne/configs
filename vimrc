@@ -52,8 +52,6 @@ if has("syntax")
 endif
 
 
-" comment if not using dark background
-set background=dark
 
 
 " vim jumps to last location when reponening file
@@ -78,6 +76,8 @@ autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | redra
 " keyboard mappings
 map <F2> :NERDTreeToggle<CR>
 
+" comment if not using dark background
+set background=dark
 
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'

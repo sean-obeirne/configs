@@ -15,7 +15,7 @@ bindsym $mod+Shift+v gaps inner all set 15
 bindsym $mod+v gaps inner all set 0
 
 # set wallpaper
-exec feh --bg-scale pictures/wallpapers/portal.png
+exec feh --bg-scale pictures/wallpapers/foggylake.png
 
 #Remove window borders - optional, not necessary
 for_window [class=".*"] border pixel 0

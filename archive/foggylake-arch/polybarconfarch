@@ -2,30 +2,14 @@
 
 [colors]
 background = #6f000000
-foreground = ${xrdb:foreground}
-;primary = ${xrdb:color8}
+foreground = ${xrdb:color7}
+;primary = ${xrdb:color5}
 primary = #02c084
-;secondary = ${xrdb:color8}
+;secondary = ${xrdb:color5}
 secondary = #65a2d9
 tertiary = #d07ef2
 fourth = #e5c246
 alert = #ed404c
-1=${xrdb:color1}
-2=${xrdb:color2}
-3=${xrdb:color3}
-4=${xrdb:color4}
-5=${xrdb:color5}
-6=${xrdb:color6}
-7=${xrdb:color7}
-8=${xrdb:color8}
-9=${xrdb:color9}
-10=${xrdb:color10}
-11=${xrdb:color11}
-12=${xrdb:color12}
-13=${xrdb:color13}
-14=${xrdb:color14}
-15=${xrdb:color15}
-16=${xrdb:color16}
 
 
 [bar/laptop]
@@ -95,12 +79,12 @@ ws-icon-9 = "9;9  "
 format = <label-state>
 
 label-focused = %icon%
-label-focused-foreground = ${colors.3}
+label-focused-foreground = ${colors.fourth}
 label-focused-padding = 1
 
 label-unfocused = ${self.label-focused}
 ;label-unfocused-foreground = #0a7383
-label-unfocused-foreground = ${xrdb:color8}
+label-unfocused-foreground = ${xrdb:color5}
 label-unfocused-padding = ${self.label-focused-padding}
 
 label-visible = ${self.label-focused}
