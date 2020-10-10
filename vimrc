@@ -83,13 +83,17 @@ let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 let g:airline_powerline_fonts = 1
 
-
-
 " navigate splits
 nmap <silent> <C-k> :wincmd k<CR>
 nmap <silent> <C-j> :wincmd j<CR>
 nmap <silent> <C-h> :wincmd h<CR>
 nmap <silent> <C-l> :wincmd l<CR>
+
+" LaTeX mappings
+"map <C-F1> o\section{}<return><up><end><left>
+"map <C-F2> o\subsection{}<return><up><end><left>
+"map <C-F3> i<end><return>\item
+"map <C-F4> o\begin{itemize}<return>\item <return>\end{itemize}<return><up><up><end>
 
 set showcmd		    " Show (partial) command in status line.
 set showmatch		" Show matching brackets.
