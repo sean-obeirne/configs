@@ -163,7 +163,7 @@ exec_always killall polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #open startpage
-bindsym $mod+z exec firefox file:///home/sean/applications/startpages/startpage_2/src/startpage.html
+bindsym $mod+z exec firefox file:///home/sean/documents/configs/startpages/startpage_2/src/startpage.html
 
 #open archwiki
 bindsym $mod+Shift+a exec firefox https://wiki.archlinux.org/
