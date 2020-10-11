@@ -90,10 +90,10 @@ nmap <silent> <C-h> :wincmd h<CR>
 nmap <silent> <C-l> :wincmd l<CR>
 
 " LaTeX mappings
-"map <C-F1> o\section{}<return><up><end><left>
-"map <C-F2> o\subsection{}<return><up><end><left>
-"map <C-F3> i<end><return>\item
-"map <C-F4> o\begin{itemize}<return>\item <return>\end{itemize}<return><up><up><end>
+map <F5> o\section{}<return><up><end><left>
+map <F6> o\subsection{}<return><up><end><left>
+map <F7> i<end><return>\item
+map <F8> o\begin{itemize}<return>\item <return>\end{itemize}<return><up><up><end>
 
 set showcmd		    " Show (partial) command in status line.
 set showmatch		" Show matching brackets.
