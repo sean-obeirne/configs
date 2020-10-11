@@ -115,6 +115,9 @@ a:hover {
 #youtube:hover {
     color: #FF0000 !important
 }
+#yt-music:hover {
+    color: #FF0000 !important
+}
 #netflix:hover{
     color: #E50914 !important
 }
@@ -132,6 +135,21 @@ a:hover {
 }
 #stackoverflow:hover {
     color: #EF8236 !important
+}
+#github:hover {
+    color: #424242 !important
+}
+#tabs:hover {
+    color: #b78000 !important
+}
+#sis:hover {
+    color: #b74900 !important
+}
+#gmail:hover {
+    color: #a53030 !important
+}
+#mycourses:hover {
+    color: #b74900 !important
 }
 .mode_class{
     /*display: flex;
