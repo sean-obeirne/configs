@@ -103,7 +103,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+t reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+r restart
 # exit i3 (logs you out of your X session)
@@ -168,6 +168,8 @@ bindsym $mod+e exec evince &
 
 # open startpage
 bindsym $mod+z exec firefox file:///home/sean/documents/configs/startpages/startpage_2/src/startpage.html
+
+bindsym $mod+Shift+c exec calculator
 
 #TODO
 #start up wireless internet connection
