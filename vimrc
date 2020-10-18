@@ -76,6 +76,9 @@ autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | redra
 " keyboard mappings
 map <F2> :NERDTreeToggle<CR>
 
+" add space after comment mark nerd comment
+" let NERDSpaceDelims=1
+
 " comment if not using dark background
 set background=dark
 
@@ -117,3 +120,5 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+" fix alacritty mouse
+set ttymouse=sgr

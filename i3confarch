@@ -25,7 +25,7 @@ hide_edge_borders both
 font pango:monospace 8
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -112,6 +112,7 @@ bindsym $mod+Shift+BackSpace exec shutdown now
 # increment/decrement brightness
 #bindsym $mod+Shift+m exec --no-startup-id sudo crementbrightness -i
 #bindsym XF86MonBrightnessDown exec crementbrightness -d
+bindsym $mod+Shift+m exec sl 8
 
 # OPEN SETUP FOR CLASSES
 # OS

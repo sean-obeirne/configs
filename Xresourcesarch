@@ -13,8 +13,8 @@
 *.color10:      #cc6666
 
 ! green
-*.color1:       #b5bd68
-*.color9:      #b5bd68
+*.color1:       #a5ad58
+*.color9:      #a5ad58
 
 ! yellow
 *.color3:       #f0c674
