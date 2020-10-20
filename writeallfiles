@@ -15,7 +15,7 @@ then
     #echo arcgap
     cp ./i3confarch ~/.config/i3/config
 
-    cp ./polybarconfarch ~/.config/polybar/config
+    sudo cp ./polybarconfarch ~/.config/polybar/config
 
     cp ./bashrcarch ~/.bashrc
 

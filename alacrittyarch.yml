@@ -165,6 +165,24 @@ colors:
   primary:
     background: '0x000000'
     foreground: '0xffffff'
+  normal:
+    black: "#000000"
+    red: "#cc6666"
+    green: "#a5ad58"
+    yellow: "#f0c674"
+    blue: "#81a2be"
+    magenta: "#b294bb"
+    cyan: "#8abeb7"
+    white: "#c5c8c6"
+  bright:
+    black: "#969896"
+    red: "#cc6666"
+    green: "#a5ad58"
+    yellow: "#f0c674"
+    blue: "#81a2be"
+    magenta: "#b294bb"
+    cyan: "#8abeb7"
+    white: "#ffffff"
 
 
 # Visual Bell
