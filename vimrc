@@ -76,9 +76,6 @@ autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | redra
 " keyboard mappings
 map <F2> :NERDTreeToggle<CR>
 
-" add space after comment mark nerd comment
-" let NERDSpaceDelims=1
-
 " comment if not using dark background
 set background=dark
 
@@ -114,11 +111,12 @@ set sw=4		    " Makes each indent 4
 set ai			    " Sets autoindent to simplify typing
 set relativenumber  " Sets relativenumber to easier jump lines
 set number          " also sets it so that we can see the linenumber
+set clipboard=unnamedplus
+"set textwidth=73
+
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
-" fix alacritty mouse
-set ttymouse=sgr

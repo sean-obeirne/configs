@@ -4,50 +4,53 @@ if hostname | grep -q black
 then
     #echo black
     #get the i3 config file
-    sudo cp ~/.config/i3/config ./i3conflaptop
+    cp ~/.config/i3/config ./i3conflaptop
 
     #get the polybar config file
-    sudo cp ~/.config/polybar/config ./polybarconflaptop
+    cp ~/.config/polybar/config ./polybarconflaptop
 
     #get bashrc
-    sudo cp ~/.bashrc ./bashrclaptop
+    cp ~/.bashrc ./bashrclaptop
 
     #get vimrc
-    sudo cp ~/.vimrc ./vimrc
+    cp ~/.vimrc ./vimrc
 elif hostname | grep -q arcgap
 then
     #echo arcgap
     #get the i3 config file
-    sudo cp ~/.config/i3/config ./i3confarch
+    cp ~/.config/i3/config ./i3confarch
 
     #get the polybar config file
-    sudo cp ~/.config/polybar/config ./polybarconfarch
+    cp ~/.config/polybar/config ./polybarconfarch
 
     #get bashrc
-    sudo cp ~/.bashrc ./bashrcarch
+    cp ~/.bashrc ./bashrcarch
 
     #get .Xresources
-    sudo cp ~/.Xresources ./Xresourcesarch
+    cp ~/.Xresources ./Xresourcesarch
 
     #get alacritty config
-    sudo cp ~/.config/alacritty/alacritty.yml ./alacrittyarch.yml
+    cp ~/.config/alacritty/alacritty.yml ./alacrittyarch.yml
 
     #get picom
-    sudo cp ~/.config/picom.conf ./picomarch
+    cp ~/.config/picom.conf ./picomarch
 
     #get vimrc
-    sudo cp ~/.vimrc ./vimrc
+    cp ~/.vimrc ./vimrc
 else
     #echo mountains
     #get the i3 config file
-    sudo cp ~/.config/i3/config ./i3conf
+    cp ~/.config/i3/config ./i3conf
 
     #get the polybar config file
-    sudo cp ~/.config/polybar/config ./polybarconf
+    cp ~/.config/polybar/config ./polybarconf
 
     #get bashrc
-    sudo cp ~/.bashrc ./bashrc
+    cp ~/.bashrc ./bashrc
+
+    #get alacritty config
+    cp ~/.config/alacritty/alacritty.yml ./alacritty.yml
 
     #get vimrc
-    sudo cp ~/.vimrc ./vimrc
+    cp ~/.vimrc ./vimrc
 fi

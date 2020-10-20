@@ -121,26 +121,42 @@ export PATH="$PATH:/home/sean/applications/idea-IC-183.5429.30/bin"
 export PATH="$PATH:/home/sean/applications/pycharm-community-2019.1.3/bin"
 export PATH="$PATH:/home/sean/bin"
 
-alias ..='cd ../'
-alias ...='cd ../../'
-alias ....='cd ../../../'
+#get alacritty working
+source /home/sean/applications/alacritty/extra/completions/alacritty.bash
+
+# /home/sean/bin
 alias ss='ssh sto7444@perseus.cs.rit.edu'
 alias ssb='ssh black'
 alias stb='sync-to-black'
 alias sd='sudo -s'
 alias copycontent='xclip -selection clipboard'
-alias myc='firefox https://mycourses.rit.edu/d2l/home & disown'
-alias mycn='firefox --new-window https://mycourses.rit.edu/d2l/home & disown'
+
+# package manager
 alias uu='sudo apt update && sudo apt upgrade'
+alias ins='sudo apt install '
+
+# rc editing
 alias vrc='vim ~/.vimrc'
+alias vplug='vim +PluginInstall +qall'
 alias brc='vim ~/.bashrc; source ~/.bashrc'
+alias src='source ~/.bashrc'
+alias irc='vim ~/.config/i3/config'
+alias arc='vim ~/.config/alacritty/alacritty.yml'
+alias xrc='vim ~/.Xresources'
+
+# git shortcuts
 alias pul='git pull '
 alias pus='git push'
 alias com='git commit -m '
 alias gad='git add '
+alias gadall='git add *'
 alias gst='git status'
-alias vrc='sudo vim ~/.vimrc'
-alias brc='vim ~/.bashrc; source ~/.bashrc'
-alias src='source ~/.bashrc'
-alias irc='vim ~/.config/i3/config'
+
+# misc. utility
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias myc='firefox https://mycourses.rit.edu/d2l/home & disown'
+alias mycn='firefox --new-window https://mycourses.rit.edu/d2l/home & disown'
 alias cdconf='cd ~/documents/configs'
+alias geni='ssh -i ~/.ssh/id_geni_ssh_rsa '

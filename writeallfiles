@@ -3,37 +3,39 @@
 if hostname | grep -q black
 then
     #echo black
-    sudo cp ./i3conflaptop ~/.config/i3/config
+    cp ./i3conflaptop ~/.config/i3/config
 
-    sudo cp ./polybarconflaptop ~/.config/polybar/config
+    cp ./polybarconflaptop ~/.config/polybar/config
 
-    sudo cp ./bashrclaptop ~/.bashrc
+    cp ./bashrclaptop ~/.bashrc
 
-    sudo cp ./vimrc ~/.vimrc
+    cp ./vimrc ~/.vimrc
 elif hostname | grep -q arcgap
 then
     #echo arcgap
-    sudo cp ./i3confarch ~/.config/i3/config
+    cp ./i3confarch ~/.config/i3/config
 
-    sudo cp ./polybarconfarch ~/.config/polybar/config
+    cp ./polybarconfarch ~/.config/polybar/config
 
-    sudo cp ./bashrcarch ~/.bashrc
+    cp ./bashrcarch ~/.bashrc
 
-    sudo cp ./Xresourcesarch ~/.Xresources
+    cp ./Xresourcesarch ~/.Xresources
 
-    sudo cp ./alacrittyarch.yml ~/.config/alacritty/alacritty.yml
+    cp ./alacrittyarch.yml ~/.config/alacritty/alacritty.yml
 
-    sudo cp ./picomarch ~/.config/picom.conf
+    cp ./picomarch ~/.config/picom.conf
 
-    sudo cp ./vimrc ~/.vimrc
+    cp ./vimrc ~/.vimrc
 else
     #echo mountains
-    sudo cp ./i3conf ~/.config/i3/config
+    cp ./i3conf ~/.config/i3/config
 
-    sudo cp ./polybarconf ~/.config/polybar/config
+    cp ./polybarconf ~/.config/polybar/config
 
-    sudo cp ./bashrc ~/.bashrc
+    cp ./bashrc ~/.bashrc
 
-    sudo cp ./vimrc ~/.vimrc
+    cp ./alacritty.yml ~/.config/alacritty/alacritty.yml
+
+    cp ./vimrc ~/.vimrc
 fi
 

@@ -28,7 +28,7 @@ hide_edge_borders both
 font pango:monospace 8
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -154,6 +154,9 @@ bindsym $mod+c exec discord &
 bindsym $mod+s exec spotify &
 #make it open on workspace 9, on second monitor
 assign [class="^spotify$"] 9
+
+#email
+bindsym $mod+m exec run-mutt
 
 #screenshot without specific name
 bindsym Print exec --no-startup-id /usr/bin/flameshot gui
