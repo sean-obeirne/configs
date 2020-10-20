@@ -139,6 +139,8 @@ nmap <silent> <C-l> :wincmd l<CR>
 " custom shortcuts
 " replace word under cursor with yanked text
 nmap <silent> <C-a> Pde
+" reformat paragraph
+map <F9> {gq}<C-o><C-o>
 
 " LaTeX mappings
 map <F5> o\section{}<return><up><end><left>
@@ -161,7 +163,7 @@ set ai			    " Sets autoindent to simplify typing
 set relativenumber  " Sets relativenumber to easier jump lines
 set number          " also sets it so that we can see the linenumber
 set clipboard=unnamedplus
-"set textwidth=73
+set textwidth=73
 
 
 " Source a global configuration file if available
