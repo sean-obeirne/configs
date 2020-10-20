@@ -136,6 +136,10 @@ nmap <silent> <C-j> :wincmd j<CR>
 nmap <silent> <C-h> :wincmd h<CR>
 nmap <silent> <C-l> :wincmd l<CR>
 
+" custom shortcuts
+" replace word under cursor with yanked text
+nmap <silent> <C-a> Pde
+
 " LaTeX mappings
 map <F5> o\section{}<return><up><end><left>
 map <F6> o\subsection{}<return><up><end><left>
