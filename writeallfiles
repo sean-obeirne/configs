@@ -34,6 +34,8 @@ else
 
     cp ./bashrc ~/.bashrc
 
+    cp ./Xresources ~/.Xresources
+
     cp ./alacritty.yml ~/.config/alacritty/alacritty.yml
 
     cp ./vimrc ~/.vimrc

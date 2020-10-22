@@ -1,19 +1,39 @@
 ;Sean O'Beirne's polybar config file
 
 [colors]
-;;transparent
-background = #00000000
 ;;purple
-;background = #8088bbcc
-background-alt = #80332244
 ;;text
-foreground = #eeeeee
+;foreground = #eeeeee
 foreground-alt = #000000
 ;;workspace indicator
 primary = #bbaadd
 ;;us module?
 secondary = #e60053
 alert = #bd2c40
+
+;bg = ${xrdb:bg}
+bg = #00000000
+; transparent
+
+ws-bg = #80332244
+; workspace bg
+fg = ${xrdb:foreground}
+;green=${xrdb:color1}
+;red=${xrdb:color2}
+;yellow=${xrdb:color3}
+;magenta=${xrdb:color4}
+;blue=${xrdb:color5}
+;6=${xrdb:color6}
+;7=${xrdb:color7}
+;8=${xrdb:color8}
+;9=${xrdb:color9}
+;10=${xrdb:color10}
+;11=${xrdb:color11}
+;12=${xrdb:color12}
+;13=${xrdb:color13}
+;14=${xrdb:color14}
+;15=${xrdb:color15}
+;16=${xrdb:color16}
 
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -22,8 +42,8 @@ height = 27
 radius = 0
 fixed-center = false
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${colors.bg}
+foreground = ${colors.fg}
 
 ;;workspace indicator
 line-size = 3
@@ -42,7 +62,7 @@ font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
-modules-left = bspwm i3
+modules-left = i3
 modules-center = mpd
 modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth temperature date powermenu
 
@@ -99,7 +119,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = internal/bspwm
 
 label-focused = %index%
-label-focused-background = ${colors.background-alt}
+label-focused-background = ${colors.ws-bg}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
@@ -292,7 +312,7 @@ type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
 label-volume = VOL
-label-volume-foreground = ${root.foreground}
+label-volume-foreground = ${colors.fg}
 
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}

@@ -48,6 +48,9 @@ else
     #get bashrc
     cp ~/.bashrc ./bashrc
 
+    #get .Xresources
+    cp ~/.Xresources ./Xresources
+
     #get alacritty config
     cp ~/.config/alacritty/alacritty.yml ./alacritty.yml
 
