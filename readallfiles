@@ -4,62 +4,62 @@ if hostname | grep -q black
 then
     #echo black
     #get the i3 config file
-    cp ~/.config/i3/config ./i3conflaptop
+    cp -u ~/.config/i3/config ./i3conflaptop
 
     #get the polybar config file
-    cp ~/.config/polybar/config ./polybarconflaptop
+    cp -u ~/.config/polybar/config ./polybarconflaptop
 
     #get bashrc
-    cp ~/.bashrc ./bashrclaptop
+    cp -u ~/.bashrc ./bashrclaptop
 
     #get vimrc
-    cp ~/.vimrc ./vimrc
+    cp -u ~/.vimrc ./vimrc
 elif hostname | grep -q arcgap
 then
     #echo arcgap
     #get the i3 config file
-    cp ~/.config/i3/config ./i3confarch
+    cp -u ~/.config/i3/config ./i3confarch
 
     #get the polybar config file
-    cp ~/.config/polybar/config ./polybarconfarch
+    cp -u ~/.config/polybar/config ./polybarconfarch
 
     #get bashrc
-    cp ~/.bashrc ./bashrcarch
+    cp -u ~/.bashrc ./bashrcarch
 
     #get .Xresources
-    cp ~/.Xresources ./Xresourcesarch
+    cp -u ~/.Xresources ./Xresourcesarch
 
     #get alacritty config
-    cp ~/.config/alacritty/alacritty.yml ./alacrittyarch.yml
+    cp -u ~/.config/alacritty/alacritty.yml ./alacrittyarch.yml
 
     #get picom
-    cp ~/.config/picom.conf ./picomarch
+    cp -u ~/.config/picom.conf ./picomarch
 
     #get vimrc
-    cp ~/.vimrc ./vimrc
+    cp -u ~/.vimrc ./vimrc
 
     #get muttrc
-    cp ~/.neomuttrc ./neomuttrc
+    cp -u ~/.neomuttrc ./neomuttrc
 else
     #echo mountains
     #get the i3 config file
-    cp ~/.config/i3/config ./i3conf
+    cp -u ~/.config/i3/config ./i3conf
 
     #get the polybar config file
-    cp ~/.config/polybar/config ./polybarconf
+    cp -u ~/.config/polybar/config ./polybarconf
 
     #get bashrc
-    cp ~/.bashrc ./bashrc
+    cp -u ~/.bashrc ./bashrc
 
     #get .Xresources
-    cp ~/.Xresources ./Xresources
+    cp -u ~/.Xresources ./Xresources
 
     #get alacritty config
-    cp ~/.config/alacritty/alacritty.yml ./alacritty.yml
+    cp -u ~/.config/alacritty/alacritty.yml ./alacritty.yml
 
     #get vimrc
-    cp ~/.vimrc ./vimrc
+    cp -u ~/.vimrc ./vimrc
 
     #get muttrc
-    cp ~/.neomuttrc ./neomuttrc
+    cp -u ~/.neomuttrc ./neomuttrc
 fi

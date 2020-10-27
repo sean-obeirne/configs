@@ -3,45 +3,45 @@
 if hostname | grep -q black
 then
     #echo black
-    cp ./i3conflaptop ~/.config/i3/config
+    cp -u ./i3conflaptop ~/.config/i3/config
 
-    cp ./polybarconflaptop ~/.config/polybar/config
+    cp -u ./polybarconflaptop ~/.config/polybar/config
 
     cp ./bashrclaptop ~/.bashrc
 
-    cp ./vimrc ~/.vimrc
+    cp -u ./vimrc ~/.vimrc
 elif hostname | grep -q arcgap
 then
     #echo arcgap
-    cp ./i3confarch ~/.config/i3/config
+    cp -u ./i3confarch ~/.config/i3/config
 
-    sudo cp ./polybarconfarch ~/.config/polybar/config
+    sudo cp -u ./polybarconfarch ~/.config/polybar/config
 
-    cp ./bashrcarch ~/.bashrc
+    cp -u ./bashrcarch ~/.bashrc
 
-    cp ./Xresourcesarch ~/.Xresources
+    cp -u ./Xresourcesarch ~/.Xresources
 
-    cp ./alacrittyarch.yml ~/.config/alacritty/alacritty.yml
+    cp -u ./alacrittyarch.yml ~/.config/alacritty/alacritty.yml
 
-    cp ./picomarch ~/.config/picom.conf
+    cp -u ./picomarch ~/.config/picom.conf
 
-    cp ./vimrc ~/.vimrc
+    cp -u ./vimrc ~/.vimrc
 
-    cp ./neomuttrc ~/.neomuttrc
+    cp -u ./neomuttrc ~/.neomuttrc
 else
     #echo mountains
-    cp ./i3conf ~/.config/i3/config
+    cp -u ./i3conf ~/.config/i3/config
 
-    cp ./polybarconf ~/.config/polybar/config
+    cp -u ./polybarconf ~/.config/polybar/config
 
-    cp ./bashrc ~/.bashrc
+    cp -u ./bashrc ~/.bashrc
 
-    cp ./Xresources ~/.Xresources
+    cp -u ./Xresources ~/.Xresources
 
-    cp ./alacritty.yml ~/.config/alacritty/alacritty.yml
+    cp -u ./alacritty.yml ~/.config/alacritty/alacritty.yml
 
-    cp ./vimrc ~/.vimrc
+    cp -u ./vimrc ~/.vimrc
 
-    cp ./neomuttrc ~/.neomuttrc
+    cp -u ./neomuttrc ~/.neomuttrc
 fi
 

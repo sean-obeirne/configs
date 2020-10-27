@@ -110,9 +110,16 @@ bindsym $mod+Shift+r exec reboot
 bindsym $mod+Shift+BackSpace exec shutdown now
 
 # increment/decrement brightness
-#bindsym $mod+Shift+m exec --no-startup-id sudo crementbrightness -i
-#bindsym XF86MonBrightnessDown exec crementbrightness -d
-bindsym $mod+Shift+m exec sl 8
+bindsym XF86MonBrightnessUp exec crementbrightness -i
+bindsym XF86MonBrightnessDown exec crementbrightness -d
+
+#volume
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+
+#open ranger
+bindsym XF86Explorer exec alacritty -e ranger ~
 
 # OPEN SETUP FOR CLASSES
 # OS
@@ -158,6 +165,8 @@ bindsym $mod+c exec discord &
 #evince
 bindsym $mod+e exec evince &
 
+#map keys
+exec_always xmodmap ~/.Xmodmap
 
 # start up polybar on reset
 exec_always killall polybar
@@ -165,6 +174,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #open startpage
 bindsym $mod+z exec firefox file:///home/sean/documents/configs/startpages/startpage_2/src/startpage.html
+
+#open mutt
+bindsym $mod+m exec run-mutt
 
 #open archwiki
 bindsym $mod+Shift+a exec firefox https://wiki.archlinux.org/
