@@ -34,7 +34,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -nb '#000000' -sf '#000000' -sb '#93dfff' -nf '#f1f1f1'
 
 # change focus
 bindsym $mod+h focus left
@@ -157,6 +157,9 @@ assign [class="^spotify$"] 9
 
 #email
 bindsym $mod+m exec run-mutt
+
+#qutebrowser
+bindsym $mod+q exec qutebrowser
 
 #screenshot without specific name
 bindsym Print exec --no-startup-id /usr/bin/flameshot gui

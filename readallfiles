@@ -37,6 +37,9 @@ then
 
     #get vimrc
     cp ~/.vimrc ./vimrc
+
+    #get muttrc
+    cp ~/.neomuttrc ./neomuttrc
 else
     #echo mountains
     #get the i3 config file
@@ -56,4 +59,7 @@ else
 
     #get vimrc
     cp ~/.vimrc ./vimrc
+
+    #get muttrc
+    cp ~/.neomuttrc ./neomuttrc
 fi

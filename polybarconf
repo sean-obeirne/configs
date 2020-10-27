@@ -18,22 +18,23 @@ bg = #00000000
 ws-bg = #80332244
 ; workspace bg
 fg = ${xrdb:foreground}
-;green=${xrdb:color1}
-;red=${xrdb:color2}
-;yellow=${xrdb:color3}
-;magenta=${xrdb:color4}
-;blue=${xrdb:color5}
-;6=${xrdb:color6}
-;7=${xrdb:color7}
-;8=${xrdb:color8}
-;9=${xrdb:color9}
-;10=${xrdb:color10}
-;11=${xrdb:color11}
-;12=${xrdb:color12}
-;13=${xrdb:color13}
-;14=${xrdb:color14}
-;15=${xrdb:color15}
-;16=${xrdb:color16}
+c0=${xrdb:color0}
+c1=${xrdb:color1}
+c2=${xrdb:color2}
+c3=${xrdb:color3}
+c4=${xrdb:color4}
+c5=${xrdb:color5}
+c6=${xrdb:color6}
+c7=${xrdb:color7}
+c8=${xrdb:color8}
+c9=${xrdb:color9}
+c10=${xrdb:color10}
+c11=${xrdb:color11}
+c12=${xrdb:color12}
+c13=${xrdb:color13}
+c14=${xrdb:color14}
+c15=${xrdb:color15}
+c16=${xrdb:color16}
 
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -222,8 +223,8 @@ label = CPU: %percentage:2%%
 type = internal/memory
 interval = 2
 ;format-prefix = " MEM: "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+format-prefix-foreground = ${colors.c1}
+format-underline = ${colors.c3}
 label = MEM: %percentage_used%%
 
 [module/wlan]
@@ -356,7 +357,6 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-foreground = ${colors.foreground-alt}

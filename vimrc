@@ -138,7 +138,7 @@ nmap <silent> <C-l> :wincmd l<CR>
 
 " custom shortcuts
 " replace word under cursor with yanked text
-nmap <silent> <C-a> bP<Right>de
+nmap <silent> <C-a> P<Right>de
 " reformat paragraph
 map <F9> {gq}<C-o><C-o>
 imap <C-s> <Esc>:w<return>gi

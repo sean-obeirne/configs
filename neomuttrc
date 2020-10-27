@@ -1,0 +1,58 @@
+# About Me
+#set from      = 'sean.t.obeirne@gmail.com'
+#set realname  = "Sean O'Beirne"
+
+# My credentials
+#set smtp_url = "smtp://sean.t.obeirne@gmail.com@smtp.gmail.com:587/"
+#set smtp_pass = 'LakePemaquid242!'
+set imap_user = "sean.t.obeirne@gmail.com"
+set imap_pass = 'LakePemaquid242!'
+
+# Swapping credentials
+folder-hook 'seantobeirne' 'source ~/.mutt/seantobeirne'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/seantobeirne<enter><change-folder>!<enter>'
+#macro index <f1> '<change-folder>imaps://sean.t.obeirne@gmail.com.imap.gmail.com:993<enter>'
+#macro index <f1> '<change-folder>imaps://sean.t.obeirne@gmail.com.imap.gmail.com:993<enter>'
+#macro index <f1> '<change-folder>imaps://sean.t.obeirne@gmail.com.imap.gmail.com:993<enter>'
+#macro index <f3> '<change-folder>imaps://imap.otherdomain.tld<enter>'
+
+# My mailboxes
+set folder = "imaps://sean.t.obeirne@gmail.com@imap.gmail.com:993"
+set spoolfile = "+INBOX"
+
+# Where to put the stuff
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
+
+# Etc
+set mail_check = 30
+set move = no
+set imap_keepalive = 900
+set sort = 'reverse-date'
+set editor = "vim"
+
+#set postponed = "+[Gmail]/Drafts"
+
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+source ~/.mutt/seantobeirne
+
+# Look pretty
+color normal white default
+color hdrdefault blue black
+color quoted blue black
+color signature blue black
+color attachment red black
+color prompt brightmagenta black
+color message brightred default
+color error brightred default
+color indicator black red
+color status brightgreen blue
+color tree white default
+color markers red black
+color search white black
+color tilde brightmagenta black
+color index blue default ~F
+color index brightred default "~N|~O"

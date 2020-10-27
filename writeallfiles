@@ -26,6 +26,8 @@ then
     cp ./picomarch ~/.config/picom.conf
 
     cp ./vimrc ~/.vimrc
+
+    cp ./neomuttrc ~/.neomuttrc
 else
     #echo mountains
     cp ./i3conf ~/.config/i3/config
@@ -39,5 +41,7 @@ else
     cp ./alacritty.yml ~/.config/alacritty/alacritty.yml
 
     cp ./vimrc ~/.vimrc
+
+    cp ./neomuttrc ~/.neomuttrc
 fi
 
