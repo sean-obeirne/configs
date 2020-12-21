@@ -49,7 +49,7 @@ color prompt brightmagenta black
 color message brightred default
 color error brightred default
 color indicator black red
-color status brightgreen blue
+color status black blue
 color tree white default
 color markers red black
 color search white black

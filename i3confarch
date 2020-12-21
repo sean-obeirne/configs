@@ -115,11 +115,14 @@ bindsym XF86MonBrightnessDown exec crementbrightness -d
 
 #volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -2%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +2%
 
 #open ranger
 bindsym XF86Explorer exec alacritty -e ranger ~
+
+#screenshot
+bindsym XF86Display exec flameshot gui
 
 # OPEN SETUP FOR CLASSES
 # OS
