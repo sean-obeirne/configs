@@ -158,6 +158,7 @@ alias arc='vim .config/alacritty/alacritty.yml'
 alias prc='sudo vim ~/.config/polybar/config'
 alias crc='vim ~/.config/picom.conf'
 alias xrc='vim ~/.Xresources; xrdb ~/.Xresources'
+alias qrc='vim .config/qutebrowser/config.py'
 alias src='source ~/.bashrc'
 alias cdconf='cd ~/documents/configs'
 
