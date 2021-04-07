@@ -178,7 +178,7 @@ bindsym $mod+s exec spotify &
 assign [class="^spotify$"] 9
 
 #email
-bindsym $mod+m exec run-mutt
+bindsym $mod+m exec emacs
 
 #qutebrowser
 bindsym $mod+q exec qutebrowser
