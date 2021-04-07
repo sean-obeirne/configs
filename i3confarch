@@ -181,8 +181,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #open startpage
 bindsym $mod+z exec firefox file:///home/sean/documents/configs/startpages/startpage_2/src/startpage.html
 
-#open mutt
-bindsym $mod+m exec run-mutt
+#open doom emacs
+bindsym $mod+m exec emacs
 
 #open archwiki
 bindsym $mod+Shift+a exec firefox https://wiki.archlinux.org/

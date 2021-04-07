@@ -38,6 +38,9 @@ then
     #get vimrc
     cp -u ~/.vimrc ./vimrc
 
+    #get doom emacs configs
+    cp -ur ~/.doom.d/ ./doom.darch
+
     #get muttrc
     cp -u ~/.neomuttrc ./neomuttrc
 else

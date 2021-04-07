@@ -27,6 +27,8 @@ then
 
     cp -u ./vimrc ~/.vimrc
 
+    cp -ur ./doom.darch/ ~/.doom.d/
+
     cp -u ./neomuttrc ~/.neomuttrc
 else
     #echo mountains
