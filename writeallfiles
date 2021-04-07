@@ -42,6 +42,8 @@ else
 
     cp -u ./vimrc ~/.vimrc
 
+    cp -ur ./doom.d/ ~/.doom.d/
+
     cp -u ./neomuttrc ~/.neomuttrc
 fi
 

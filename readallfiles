@@ -60,6 +60,9 @@ else
     #get vimrc
     cp -u ~/.vimrc ./vimrc
 
+    #get doom emacs configs
+    cp -ur ~/.doom.d/ ./doom.d
+
     #get muttrc
     cp -u ~/.neomuttrc ./neomuttrc
 fi
