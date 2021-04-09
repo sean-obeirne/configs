@@ -41,6 +41,9 @@ then
     #get doom emacs configs
     cp -ur ~/.doom.d/ ./doom.darch
 
+    #get qutebrowser
+    cp -u ~/.config/qutebrowser/config.py ./qutebrowser
+
     #get muttrc
     cp -u ~/.neomuttrc ./neomuttrc
 else

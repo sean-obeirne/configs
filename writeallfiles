@@ -29,6 +29,8 @@ then
 
     cp -ur ./doom.darch/ ~/.doom.d/
 
+    cp -u ./qutebrowser ~/.config/qutebrowser/config.py
+
     cp -u ./neomuttrc ~/.neomuttrc
 else
     #echo mountains
@@ -45,6 +47,8 @@ else
     cp -u ./vimrc ~/.vimrc
 
     cp -ur ./doom.d/ ~/.doom.d/
+
+    cp -u ./qutebrowser ~/.config/qutebrowser/config.py
 
     cp -u ./neomuttrc ~/.neomuttrc
 fi
