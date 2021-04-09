@@ -995,7 +995,7 @@
 ## default is used.
 ## Type: Directory
 #c.downloads.location.directory = /home/sean/downloads
-config.load_autoconfig(False)
+config.load_autoconfig()
 
 ## Prompt the user for the download location. If set to false,
 ## `downloads.location.directory` will be used.
@@ -2170,3 +2170,5 @@ config.bind(';', 'scroll right')
 # config.bind('Y', 'prompt-accept --save yes', mode='yesno')
 # config.bind('n', 'prompt-accept no', mode='yesno')
 # config.bind('y', 'prompt-accept yes', mode='yesno')
+
+config.set("colors.webpage.darkmode.enabled", True)
