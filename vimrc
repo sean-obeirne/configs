@@ -29,6 +29,9 @@ Plugin 'vim-airline/vim-airline-themes'
 " commenting improvements
 Plugin 'preservim/nerdcommenter'
 
+" wiki
+Plugin 'vimwiki/vimwiki'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -116,7 +119,7 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = ' '
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 
@@ -147,10 +150,10 @@ imap <C-s> <Esc>:w<return>gi
 map <C-s> <Esc>:w<return>
 
 " LaTeX mappings
-map <F5> o\section{}<return><up><end><left>
-map <F6> o\subsection{}<return><up><end><left>
-map <F7> i<end><return>\item
-map <F8> o\begin{itemize}<return>\item <return>\end{itemize}<return><up><up><end>
+"map <F5> o\section{}<return><up><end><left>
+"map <F6> o\subsection{}<return><up><end><left>
+"map <F7> i<end><return>\item
+"map <F8> o\begin{itemize}<return>\item <return>\end{itemize}<return><up><up><end>
 
 set showcmd		    " Show (partial) command in status line.
 set showmatch		" Show matching brackets.

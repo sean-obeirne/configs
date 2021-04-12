@@ -33,16 +33,11 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
 
 (setq  x-meta-keysym 'super
        x-super-keysym 'meta)
 
-(setq redisplay-dont-pause t
-      scroll-margin 1
-      scroll-step 1
-      scroll-conservatively 10000
-      scroll-preserve-screen-position 1)
 ;; for terminal running (emacs -nw)
 ;(global-set-key [f7] nil)
 ;global-set-key [f8] nil)
