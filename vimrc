@@ -162,7 +162,7 @@ set ignorecase		" Do case insensitive matching
 "set incsearch		" Incremental search
 set autowrite		" Automatically save before commands like :next and :make
 "set hidden		    " Hide buffers when they are abandoned
-"set mouse=a		" Enable mouse usage (all modes)
+set mouse=a		    " Enable mouse usage (all modes)
 set expandtab		" Makes tabs into spaces
 set ts=4		    " Makes each tab into 4 spaces
 set sw=4		    " Makes each indent 4

@@ -162,6 +162,11 @@ alias qrc='vim .config/qutebrowser/config.py'
 alias src='source ~/.bashrc'
 alias cdconf='cd ~/documents/configs'
 
+# netctl network switch shortcuts
+alias srit='sudo netctl switch-to rit'
+alias sben='sudo netctl switch-to bennington'
+alias salb='sudo netctl switch-to albert'
+
 # misc. utility
 alias ..='cd ../'
 alias ...='cd ../../'
