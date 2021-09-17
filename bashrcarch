@@ -148,6 +148,7 @@ alias com='git commit -m '
 alias gad='git add '
 alias gadall='git add *'
 alias gst='git status'
+alias dif='git diff '
 
 # rc editing
 alias vrc='vim ~/.vimrc'
