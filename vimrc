@@ -146,8 +146,15 @@ nmap <silent> <C-l> :wincmd l<CR>
 nmap <silent> <C-a> P<Right>de
 " reformat paragraph
 map <F9> {gq}<C-o><C-o>
+" C-s to save
 imap <C-s> <Esc>:w<return>gi
 map <C-s> <Esc>:w<return>
+" C-w to exit without saving
+nmap <C-w> <Esc>:q!<return>
+imap <C-w> <Esc>:q!<return>
+" C-x to save and exit
+map <C-x> <Esc>:wq<return>
+imap <C-x> <Esc>:wq<return>
 
 " LaTeX mappings
 "map <F5> o\section{}<return><up><end><left>
