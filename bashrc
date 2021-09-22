@@ -130,6 +130,7 @@ alias ssb='ssh black'
 alias stb='sync-to-black'
 alias sd='sudo -s'
 alias copycontent='xclip -selection clipboard'
+alias uzc='unzip-checker '
 
 # package manager
 alias uu='sudo apt update && sudo apt upgrade'
