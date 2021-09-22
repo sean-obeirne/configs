@@ -134,6 +134,7 @@ alias sd='sudo '
 alias ss='cs-ssh.sh'
 alias ssm='ssh-mountains.sh'
 alias stm='sync-to-mountains'
+alias uzc='unzip-checker '
 
 # package manager
 alias uu='sudo pacman -Syu'
@@ -175,3 +176,4 @@ alias ....='cd ../../../'
 alias myc='firefox https://mycourses.rit.edu/d2l/home'
 alias mycn='firefox --new-window https://mycourses.rit.edu/d2l/home'
 alias geni='ssh -i ~/.ssh/id_geni_ssh_rsa '
+alias p3='python3 '
