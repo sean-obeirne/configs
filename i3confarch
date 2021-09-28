@@ -175,7 +175,7 @@ bindsym $mod+c exec discord &
 bindsym $mod+e exec evince &
 
 #map keys
-#exec_always xmodmap ~/.Xmodmap
+exec_always xmodmap ~/.Xmodmap
 
 # start up polybar on reset
 exec_always killall polybar
