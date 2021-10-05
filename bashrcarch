@@ -139,7 +139,7 @@ alias uzc='unzip-checker '
 # package manager
 alias uu='sudo pacman -Syu'
 alias ins='sudo pacman -S '
-alias rem='sudo pacman -R '
+alias uins='sudo pacman -R '
 alias ains='yay -S '
 
 # git shortcuts
