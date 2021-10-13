@@ -135,6 +135,7 @@ alias ss='ssh glados'
 alias ssm='ssh-mountains.sh'
 alias stm='sync-to-mountains'
 alias uzc='unzip-checker '
+alias vm='vim-man '
 
 # package manager
 alias uu='sudo pacman -Syu'
