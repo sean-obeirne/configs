@@ -136,6 +136,7 @@ alias ssm='ssh-mountains.sh'
 alias stm='sync-to-mountains'
 alias uzc='unzip-checker '
 alias vm='vim-man '
+alias vwb='vimwiki-backup '
 
 # package manager
 alias uu='sudo pacman -Syu'
