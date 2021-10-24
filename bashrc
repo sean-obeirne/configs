@@ -125,16 +125,18 @@ export PATH="$PATH:/home/sean/bin"
 source /home/sean/applications/alacritty/extra/completions/alacritty.bash
 
 # /home/sean/bin
-alias ss='ssh sto7444@perseus.cs.rit.edu'
+alias ss='ssh glados'
 alias ssb='ssh black'
 alias stb='sync-to-black'
 alias sd='sudo -s'
 alias copycontent='xclip -selection clipboard'
 alias uzc='unzip-checker '
+alias gmm='/home/sean/applications/gmakemake/gmakemake '
 
 # package manager
 alias uu='sudo apt update && sudo apt upgrade'
 alias ins='sudo apt install '
+alias uins='sudo apt remove '
 
 # rc editing
 alias vrc='vim ~/.vimrc'
