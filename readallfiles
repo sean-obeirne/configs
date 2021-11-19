@@ -38,9 +38,6 @@ then
     #get vimrc
     cp -u ~/.vimrc ./vimrc
 
-    #get doom emacs configs
-    cp -ur ~/.doom.d/ ./doom.darch
-
     #get qutebrowser
     cp -u ~/.config/qutebrowser/config.py ./qutebrowser
 
@@ -65,9 +62,6 @@ else
 
     #get vimrc
     cp -u ~/.vimrc ./vimrc
-
-    #get doom emacs configs
-    cp -ur ~/.doom.d/ ./doom.d
 
     #get muttrc
     cp -u ~/.neomuttrc ./neomuttrc
