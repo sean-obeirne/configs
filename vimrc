@@ -38,6 +38,7 @@ filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 
+let g:vimwiki_list = [{'path': '~/documents/vimwiki/'}]
 
 """ END PLUGINS """
 
