@@ -124,6 +124,8 @@ export PATH="$PATH:/home/sean/bin"
 #get alacritty working
 source /home/sean/applications/alacritty/extra/completions/alacritty.bash
 
+rm -rf /home/sean/Downloads /home/sean/Desktop
+
 # /home/sean/bin
 alias ss='ssh glados'
 alias ssb='ssh black'
@@ -147,7 +149,7 @@ alias src='source ~/.bashrc'
 alias irc='vim ~/.config/i3/config'
 alias arc='vim ~/.config/alacritty/alacritty.yml'
 alias xrc='vim ~/.Xresources'
-alias krc='vim ~/qmk_firmware/keyboards/preonic/keymaps/sean-obeirne/keymap.c'
+alias krc='vim ~/applications/qmk_firmware/keyboards/preonic/keymaps/sean-obeirne/keymap.c'
 alias cdk='cd ~/qmk_firmware/keyboards/preonic/keymaps/sean-obeirne/'
 
 # git shortcuts
