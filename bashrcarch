@@ -124,6 +124,7 @@ fi
 
 # build PATH
 export PATH="/home/sean/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/lib/"
 
 ### Custom Aliases ###
 # /home/sean/bin
@@ -167,6 +168,7 @@ alias src='source ~/.bashrc'
 alias cdconf='cd ~/documents/configs'
 
 # netctl network switch shortcuts
+alias nsw='sudo netctl switch-to '
 alias srit='sudo netctl switch-to rit'
 alias sben='sudo netctl switch-to bennington'
 alias salb='sudo netctl switch-to albert'
