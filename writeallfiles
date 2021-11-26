@@ -27,8 +27,6 @@ then
 
     cp -u ./vimrc ~/.vimrc
 
-    cp -ur ./doom.darch/ ~/.doom.d/
-
     cp -u ./qutebrowser ~/.config/qutebrowser/config.py
 
     cp -u ./neomuttrc ~/.neomuttrc
@@ -45,8 +43,6 @@ else
     cp -u ./alacritty.yml ~/.config/alacritty/alacritty.yml
 
     cp -u ./vimrc ~/.vimrc
-
-    cp -ur ./doom.d/ ~/.doom.d/
 
     cp -u ./qutebrowser ~/.config/qutebrowser/config.py
 
