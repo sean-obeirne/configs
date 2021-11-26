@@ -138,8 +138,8 @@ bindsym $mod+Shift+r exec reboot
 bindsym $mod+Shift+BackSpace exec shutdown now
 
 # media keys
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 2 -5%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 2 +5%
 #bindsym XF86AudioNext
 #bindsym XF86AudioPlay
 
