@@ -1,5 +1,5 @@
 // Change this to your username
-var username = "grtcdr";
+var username = "sean";
 
 if (localStorage.getItem('data') == null) var mode = "dark";
 else mode = localStorage.getItem('data');
