@@ -174,9 +174,11 @@ alias sben='sudo netctl switch-to bennington'
 alias salb='sudo netctl switch-to albert'
 
 # misc. utility
+alias ~="cd ~"
 alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
+alias pcd='cd ~/classes/graphics/labs/lab7'
 alias myc='firefox https://mycourses.rit.edu/d2l/home'
 alias mycn='firefox --new-window https://mycourses.rit.edu/d2l/home'
 alias geni='ssh -i ~/.ssh/id_geni_ssh_rsa '
