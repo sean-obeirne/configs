@@ -31,7 +31,7 @@ gaps outer 0
 #Adds gaps back in
 bindsym $mod+Shift+v gaps inner all set 35
 #Remove gaps
-bindsym $mod+v gaps inner all set 0
+bindsym $mod+v gaps inner all set 2
 
 #Remove window borders
 for_window [class=".*"] border pixel 0
@@ -129,7 +129,7 @@ bindsym $mod+Shift+u resize shrink height 5 px or 5 ppt
 bindsym $mod+Shift+o resize grow width 5 px or 5 ppt
 
 # lock i3
-bindsym $mod+Shift+x exec i3lock -i ~/pictures/mountains2.png
+bindsym $mod+Shift+x exec i3lock -i ~/media/pictures/mountains2.png
 
 # reboot computer
 bindsym $mod+Shift+r exec reboot
