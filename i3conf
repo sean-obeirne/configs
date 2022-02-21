@@ -8,6 +8,9 @@ set $mod Mod1
 # Primary and secondary monitors
 set $primary DP-2
 set $secondary HDMI-0
+set $tertiary DP-0
+
+exec_always mmon -n
 
 # My directory for my custom scripts
 set $scripts /home/sean/bin
@@ -86,8 +89,8 @@ workspace 3 output $primary
 workspace 4 output $primary
 workspace 5 output $primary
 workspace 6 output $primary
-workspace 7 output $primary
-workspace 8 output $secondary
+workspace 7 output $tertiary
+workspace 8 output $tertiary
 workspace 9 output $secondary
 workspace 10 output $secondary
 
@@ -128,8 +131,9 @@ bindsym $mod+Shift+i resize grow height 5 px or 5 ppt
 bindsym $mod+Shift+u resize shrink height 5 px or 5 ppt
 bindsym $mod+Shift+o resize grow width 5 px or 5 ppt
 
-# lock i3
-bindsym $mod+Shift+x exec i3lock -i ~/media/pictures/mountains2.png
+#lock i3
+bindsym $mod+Shift+x exec i3lock -c 200525 -eu
+#bindsym $mod+Shift+x exec i3lock -i ~/media/pictures/mountains2.png
 
 # reboot computer
 bindsym $mod+Shift+r exec reboot
@@ -146,10 +150,16 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 2 +5%
 
 ####--SYSTEM STARTUP PROCESSES--####
 
-exec --no-startup-id $scripts/dual-screen
-exec --no-startup-id $scripts/bg-set
+exec --no-startup-id $scripts/triple-monitor.sh
+exec_always $scripts/bg-set
 #exec --no-startup-id sudo $scripts/internet #outdated - for wifi
 #exec_always $scripts/notsh
+#work single monitor setup
+bindsym $mod+Shift+m exec "$scripts/triple-monitor.sh; $scripts/bg-set"
+bindsym $mod+Shift+n exec "$scripts/dual-monitor.sh; $scripts/bg-set"
+bindsym $mod+Shift+b exec "$scripts/single-monitor.sh; $scripts/bg-set"
+#activate mouse macros
+exec_always xbindkeys -p
 
 
 ####--APPLICATION LAUNCHER SHORTCUTS--####
@@ -176,6 +186,9 @@ bindsym $mod+c exec discord &
 bindsym $mod+s exec spotify &
 #make it open on workspace 9, on second monitor
 assign [class="^spotify$"] 9
+
+#runelite
+bindsym $mod+Shift+s exec runelite &
 
 #email
 bindsym $mod+m exec emacs
