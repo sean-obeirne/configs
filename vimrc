@@ -156,6 +156,8 @@ imap <C-w> <Esc>:q!<return>
 " C-x to save and exit
 map <C-x> <Esc>:wq<return>
 imap <C-x> <Esc>:wq<return>
+" C-f to fold to mark 'k
+nmap <C-f> zf'k
 
 " LaTeX mappings
 "map <F5> o\section{}<return><up><end><left>

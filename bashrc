@@ -116,10 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#define some path variable stuff
+#define environment variables
 export PATH="$PATH:/home/sean/applications/idea-IC-183.5429.30/bin"
 export PATH="$PATH:/home/sean/applications/pycharm-community-2019.1.3/bin"
 export PATH="$PATH:/home/sean/bin"
+export EDITOR="vim"
 
 #get alacritty working
 source /home/sean/applications/alacritty/extra/completions/alacritty.bash
@@ -147,8 +148,10 @@ alias brc='vim ~/.bashrc; source ~/.bashrc'
 alias prc='vim ~/.config/polybar/config'
 alias src='source ~/.bashrc'
 alias irc='vim ~/.config/i3/config'
+alias nrc='vim ~/.config/dunst/dunstrc'
 alias arc='vim ~/.config/alacritty/alacritty.yml'
 alias xrc='vim ~/.Xresources'
+alias mou='vim ~/.xbindkeysrc; xbindkeys -p'
 alias krc='vim ~/applications/qmk_firmware/keyboards/preonic/keymaps/sean-obeirne/keymap.c'
 alias cdk='cd ~/qmk_firmware/keyboards/preonic/keymaps/sean-obeirne/'
 
@@ -165,12 +168,17 @@ alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias ~='cd ~'
-alias pcd='cd ~/classes/linux/projects/NSSA-220-Project-2/Code'
+alias pcd='cd ~/code/in-progress/flame.eyeo'
+alias kcd='cd ~/applications/qmk_firmware'
 alias v='vim'
 alias intellij='idea.sh & disown'
 alias myc='firefox https://mycourses.rit.edu/d2l/home & disown'
 alias mycn='firefox --new-window https://mycourses.rit.edu/d2l/home & disown'
 alias cdconf='cd ~/documents/configs'
+alias cdbin='cd ~/bin'
+alias ns='new-script '
 alias geni='ssh -i ~/.ssh/id_geni_ssh_rsa '
 alias pad='echo "HUION Huion Tablet_H640P Pad pad"'
 alias stylus='echo "HUION Huion Tablet_H640P stylus"'
+alias go='make; ./main x'
+alias cdu='cd ~/documents/career/ukg'
