@@ -7,6 +7,7 @@ set $mod Mod1
 
 # Primary and secondary monitors
 set $primary DP-2
+set $primary2 HDMI-0
 set $secondary HDMI-0
 set $tertiary DP-0
 
@@ -83,6 +84,12 @@ bindsym $mod+t split toggle
 bindsym $mod+f fullscreen toggle
 
 # assign workspaces to specific monitors
+workspace 1 output $primary2
+workspace 2 output $primary2
+workspace 3 output $primary2
+workspace 4 output $primary2
+workspace 5 output $primary2
+workspace 6 output $primary2
 workspace 1 output $primary
 workspace 2 output $primary
 workspace 3 output $primary
