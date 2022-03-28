@@ -7,9 +7,9 @@ set $mod Mod1
 
 # Primary and secondary monitors
 set $primary DP-2
-set $primary2 HDMI-0
-set $secondary HDMI-0
-set $tertiary DP-0
+set $primary2 HDMI-1
+set $secondary DP-0
+set $tertiary HDMI-0
 
 exec_always mmon -n
 
@@ -96,10 +96,10 @@ workspace 3 output $primary
 workspace 4 output $primary
 workspace 5 output $primary
 workspace 6 output $primary
-workspace 7 output $tertiary
-workspace 8 output $tertiary
-workspace 9 output $secondary
-workspace 10 output $secondary
+workspace 7 output $secondary
+workspace 8 output $secondary
+workspace 9 output $tertiary
+workspace 10 output $tertiary
 
 # switch to workspace
 bindsym $mod+1 workspace number 1 $wksp1
