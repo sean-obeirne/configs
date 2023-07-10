@@ -119,7 +119,10 @@ fi
 #define environment variables
 export PATH="$PATH:/home/sean/applications/idea-IC-183.5429.30/bin"
 export PATH="$PATH:/home/sean/applications/pycharm-community-2019.1.3/bin"
+export PATH="$PATH:/home/"
 export PATH="$PATH:/home/sean/bin"
+export ANDROID_HOME=/home/sean/applications/Android/Sdk
+export PATH=${PATH}:/home/sean/applications/Android/Sdk/platform-tools
 export EDITOR="vim"
 
 #get alacritty working
@@ -138,7 +141,7 @@ alias gmm='/home/sean/applications/gmakemake/gmakemake '
 
 # package manager
 alias uu='sudo apt update && sudo apt upgrade'
-alias ins='sudo apt install '
+alias ins='sudo apt install -y'
 alias uins='sudo apt remove '
 
 # rc editing
@@ -170,7 +173,8 @@ alias ....='cd ../../../'
 alias ~='cd ~'
 alias pcd='cd ~/code/in-progress/flame.eyeo'
 alias kcd='cd ~/applications/qmk_firmware'
-alias v='vim'
+alias v='vim -p "\ww"'
+alias wiki='vim -p "\ww"'
 alias intellij='idea.sh & disown'
 alias myc='firefox https://mycourses.rit.edu/d2l/home & disown'
 alias mycn='firefox --new-window https://mycourses.rit.edu/d2l/home & disown'
@@ -182,3 +186,5 @@ alias pad='echo "HUION Huion Tablet_H640P Pad pad"'
 alias stylus='echo "HUION Huion Tablet_H640P stylus"'
 alias go='make; ./main x'
 alias cdu='cd ~/documents/career/ukg'
+alias wiki='vim ~/documents/vimwiki/index.wiki'
+alias cdp='cd ~/code/work/Mission-Uplink/UplinkOS'

@@ -151,13 +151,15 @@ map <F9> {gq}<C-o><C-o>
 imap <C-s> <Esc>:w<return>gi
 map <C-s> <Esc>:w<return>
 " C-w to exit without saving
-nmap <C-w> <Esc>:q!<return>
-imap <C-w> <Esc>:q!<return>
+"nmap <C-w> <Esc>:q!<return>
+"imap <C-w> <Esc>:q!<return>
 " C-x to save and exit
 map <C-x> <Esc>:wq<return>
 imap <C-x> <Esc>:wq<return>
 " C-f to fold to mark 'k
 nmap <C-f> zf'k
+" F2 to split windows vertically
+map <F2> <C-W>v
 
 " LaTeX mappings
 "map <F5> o\section{}<return><up><end><left>

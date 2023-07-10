@@ -5,13 +5,27 @@
 # I use alt as my mod key
 set $mod Mod1
 
+
 # Primary and secondary monitors
 set $primary DP-2
-set $primary2 HDMI-1
+set $primary2 HDMI-1-1
 set $secondary DP-0
 set $tertiary HDMI-0
 
 exec_always mmon -n
+
+# assign workspaces to specific monitors
+workspace 1 output $primary
+workspace 2 output $primary
+workspace 3 output $primary
+workspace 4 output $primary
+workspace 5 output $primary
+workspace 6 output $secondary
+workspace 7 output $secondary
+workspace 8 output $secondary
+workspace 9 output $secondary
+workspace 10 output $secondary
+
 
 # My directory for my custom scripts
 set $scripts /home/sean/bin
@@ -30,12 +44,12 @@ set $wksp10 "DI"
 
 
 #Adds gaps to i3 by default
-gaps inner 35
+gaps inner 10
 gaps outer 0 
 #Adds gaps back in
-bindsym $mod+Shift+v gaps inner all set 35
+bindsym $mod+Shift+v gaps inner all set 10
 #Remove gaps
-bindsym $mod+v gaps inner all set 2
+bindsym $mod+v gaps inner all set 0
 
 #Remove window borders
 for_window [class=".*"] border pixel 0
@@ -82,24 +96,6 @@ bindsym $mod+t split toggle
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-
-# assign workspaces to specific monitors
-workspace 1 output $primary2
-workspace 2 output $primary2
-workspace 3 output $primary2
-workspace 4 output $primary2
-workspace 5 output $primary2
-workspace 6 output $primary2
-workspace 1 output $primary
-workspace 2 output $primary
-workspace 3 output $primary
-workspace 4 output $primary
-workspace 5 output $primary
-workspace 6 output $primary
-workspace 7 output $secondary
-workspace 8 output $secondary
-workspace 9 output $tertiary
-workspace 10 output $tertiary
 
 # switch to workspace
 bindsym $mod+1 workspace number 1 $wksp1
@@ -157,14 +153,15 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 2 +5%
 
 ####--SYSTEM STARTUP PROCESSES--####
 
-exec --no-startup-id $scripts/triple-monitor.sh
-exec_always $scripts/bg-set
+#exec --no-startup-id $scripts/single-monitor.sh
+#exec_always $scripts/bg-set
 #exec --no-startup-id sudo $scripts/internet #outdated - for wifi
 #exec_always $scripts/notsh
 #work single monitor setup
 bindsym $mod+Shift+m exec "$scripts/triple-monitor.sh; $scripts/bg-set"
 bindsym $mod+Shift+n exec "$scripts/dual-monitor.sh; $scripts/bg-set"
 bindsym $mod+Shift+b exec "$scripts/single-monitor.sh; $scripts/bg-set"
+exec_always "$scripts/single-monitor.sh; $scripts/bg-set"
 #activate mouse macros
 exec_always xbindkeys -p
 
@@ -200,6 +197,8 @@ bindsym $mod+Shift+s exec runelite &
 #email
 bindsym $mod+m exec emacs
 
+#vimwiki
+bindsym $mod+w exec alacritty --command vim /home/sean/documents/vimwiki/index.wiki
 #qutebrowser
 bindsym $mod+q exec qutebrowser
 
@@ -234,7 +233,7 @@ exec_always xsetwacom set "HUION Huion Tablet_H640P stylus" Area 0 0 28000 17500
 exec_always tablet -b
 
 # start up polybar on reset
-exec_always killall polybar
+#exec_always killall polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # enable compton for transparent polybar/terminal

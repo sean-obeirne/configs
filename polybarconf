@@ -37,7 +37,7 @@ c15=${xrdb:color15}
 c16=${xrdb:color16}
 
 [bar/main]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
 height = 27
 radius = 0
@@ -142,7 +142,7 @@ label-empty-padding = 2
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
-wrapping-scroll = false
+wrapping-scroll = true
 
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
