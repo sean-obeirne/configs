@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if hostname | grep -q black
 then
@@ -30,6 +30,18 @@ then
     cp -u ./qutebrowser ~/.config/qutebrowser/config.py
 
     cp -u ./neomuttrc ~/.neomuttrc
+elif hostname | grep -q nixtop
+then
+    #echo nixtop
+    cp -u ./i3confnix ~/.config/i3/config
+
+    sudo cp -u ./polybarconfnix ~/.config/polybar/config
+
+    cp -u ./bashrcnix ~/.bashrc
+
+    cp -u ./alacrittynix.yml ~/.config/alacritty/alacritty.yml
+
+    cp -u ./vimrcnix ~/.vimrc
 else
     #echo mountains
     cp -u ./i3conf ~/.config/i3/config

@@ -43,6 +43,23 @@ then
 
     #get muttrc
     cp -u ~/.neomuttrc ./neomuttrc
+elif hostname | grep -q nixtop
+then
+    #echo nixtop
+    #get the i3 config file
+    cp -u ~/.config/i3/config ./i3confnix
+
+    #get the polybar config file
+    cp -u ~/.config/polybar/config ./polybarconfnix
+
+    #get bashrc
+    cp -u ~/.bashrc ./bashrcnix
+
+    #get alacritty config
+    cp -u ~/.config/alacritty/alacritty.yml ./alacrittynix.yml
+
+    #get vimrc
+    cp -u ~/.vimrc ./vimrcnix
 else
     #echo mountains
     #get the i3 config file
