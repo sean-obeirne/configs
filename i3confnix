@@ -1,0 +1,238 @@
+# Sean O'Beirne's i3 config file
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+# I use alt as my mod key
+set $mod Mod4
+
+
+# Primary and secondary monitors
+set $primary DP-2
+set $primary2 HDMI-1-1
+set $secondary DP-3
+set $tertiary HDMI-0
+
+# exec_always mmon -n
+
+# assign workspaces to specific monitors
+workspace 1 output $primary
+workspace 2 output $primary
+workspace 3 output $primary
+workspace 4 output $primary
+workspace 5 output $primary
+workspace 6 output $secondary
+workspace 7 output $secondary
+workspace 8 output $secondary
+workspace 9 output $secondary
+workspace 10 output $secondary
+
+
+# My directory for my custom scripts
+# set $scripts /home/sean/bin
+
+# Workspace variables
+set $wksp1 "1"
+set $wksp2 "2"
+set $wksp3 "3"
+set $wksp4 "4"
+set $wksp5 "5"
+set $wksp6 "6"
+set $wksp7 "7"
+set $wksp8 "8"
+set $wksp9 "9"
+set $wksp10 "10"
+
+#Adds gaps to i3 by default
+gaps inner 10
+#gaps outer 0 
+#Adds gaps back in
+bindsym $mod+Shift+v gaps inner all set 10
+#Remove gaps
+bindsym $mod+v gaps inner all set 0
+
+#Remove window borders
+for_window [class=".*"] border pixel 0
+hide_edge_borders both
+
+# Font for window titles
+font pango:monospace 8
+
+# start a terminal
+bindsym $mod+Return exec alacritty
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start dmenu
+bindsym $mod+d exec dmenu_run -nb '#000000' -sf '#000000' -sb '#93dfff' -nf '#f1f1f1'
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# swap split in orientation
+bindsym $mod+t split toggle
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# switch to workspace
+bindsym $mod+1 workspace number 1 
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+ 
+# reload the configuration file
+bindsym $mod+Shift+t reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+#shortcuts to resize windows
+bindsym $mod+Shift+y resize shrink width 5 px or 5 ppt
+bindsym $mod+Shift+i resize grow height 5 px or 5 ppt
+bindsym $mod+Shift+u resize shrink height 5 px or 5 ppt
+bindsym $mod+Shift+o resize grow width 5 px or 5 ppt
+
+#lock i3
+bindsym $mod+Shift+x exec i3lock -c 200525 -eu
+#bindsym $mod+Shift+x exec i3lock -i ~/media/pictures/mountains2.png
+
+# reboot computer
+bindsym $mod+Shift+r exec reboot
+
+# shutdown computer
+bindsym $mod+Shift+BackSpace exec shutdown now
+
+# media keys
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 2 -5%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 2 +5%
+#bindsym XF86AudioNext
+#bindsym XF86AudioPlay
+
+
+####--SYSTEM STARTUP PROCESSES--####
+
+#exec --no-startup-id $scripts/single-monitor.sh
+#exec_always $scripts/bg-set
+#exec --no-startup-id sudo $scripts/internet #outdated - for wifi
+#exec_always $scripts/notsh
+#work single monitor setup
+bindsym $mod+Shift+m exec "$scripts/triple-monitor.sh; $scripts/bg-set"
+bindsym $mod+Shift+n exec "$scripts/dual-monitor.sh; $scripts/bg-set"
+bindsym $mod+Shift+b exec "$scripts/single-monitor.sh; $scripts/bg-set"
+exec_always "$scripts/single-monitor.sh; $scripts/bg-set"
+#activate mouse macros
+exec_always xbindkeys -p
+
+
+####--APPLICATION LAUNCHER SHORTCUTS--####
+
+#firefox
+bindsym $mod+b exec firefox &
+
+#gimp
+bindsym $mod+g exec gimp &
+
+#pavu-control
+bindsym $mod+p exec pavucontrol &
+
+#audacity
+bindsym $mod+a exec audacity &
+
+#discord
+#bindsym $mod+c exec discord &
+
+#spotify
+bindsym $mod+s exec spotify &
+#make it open on workspace 9, on second monitor
+#assign [class="^spotify$"] 9
+
+#runelite
+bindsym $mod+Shift+s exec runelite &
+
+#email
+#bindsym $mod+m exec emacs
+
+#vimwiki
+bindsym $mod+w exec alacritty --command vim /home/sean/documents/vimwiki/index.wiki
+
+#screenshot without specific name
+bindsym Print exec --no-startup-id /usr/bin/flameshot gui
+#bindsym Print exec --no-startup-id $scripts/custom-screenshot
+
+#evince
+bindsym $mod+e exec evince &
+
+#TODO
+#intellij
+#bindsym $mod+i exec cd ~/IntelliJ/idea-IC-183.5429.30/bin; bash idea.sh &
+
+# open nix package search
+bindsym $mod+n exec firefox https://search.nixos.org/packages
+
+#bindsym $mod+Shift+c exec calculator
+
+#TODO
+#start up wireless internet connection
+#exec_always killall wpa_supplicant
+#exec_always killall dhclient
+#exec_always 'wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant.conf'
+#exec_always dhclient wlp8s0
+
+# make tablet only draw on primary
+#exec_always xsetwacom set "HUION Huion Tablet_H640P stylus" MapToOutput HEAD-0
+# setup tablet work area
+#exec_always xsetwacom set "HUION Huion Tablet_H640P stylus" Area 0 0 28000 17500
+# setup tablet button shortcuts
+#exec_always tablet -b
+
+# start up polybar on reset
+exec_always udiskie
+
+# start up polybar on reset
+exec_always one-polybar
+
+# enable compton for transparent polybar/terminal
+exec picom
+#exec_always killall compton
+#exec_always compton --opengl --vsync opengl-swc --blur-background -m .8 --blur-background-fixed --blur-kern '15,15,0.140858,0.182684,0.227638,0.272532,0.313486,0.346456,0.367879,0.375311,0.367879,0.346456,0.313486,0.272532,0.227638,0.182684,0.140858,0.182684,0.236928,0.295230,0.353455,0.406570,0.449329,0.477114,0.486752,0.477114,0.449329,0.406570,0.353455,0.295230,0.236928,0.182684,0.227638,0.295230,0.367879,0.440432,0.506617,0.559898,0.594521,0.606531,0.594521,0.559898,0.506617,0.440432,0.367879,0.295230,0.227638,0.272532,0.353455,0.440432,0.527292,0.606531,0.670320,0.711770,0.726149,0.711770,0.670320,0.606531,0.527292,0.440432,0.353455,0.272532,0.313486,0.406570,0.506617,0.606531,0.697676,0.771052,0.818731,0.835270,0.818731,0.771052,0.697676,0.606531,0.506617,0.406570,0.313486,0.346456,0.449329,0.559898,0.670320,0.771052,0.852144,0.904837,0.923116,0.904837,0.852144,0.771052,0.670320,0.559898,0.449329,0.346456,0.367879,0.477114,0.594521,0.711770,0.818731,0.904837,0.960789,0.980199,0.960789,0.904837,0.818731,0.711770,0.594521,0.477114,0.367879,0.375311,0.486752,0.606531,0.726149,0.835270,0.923116,0.980199,0.980199,0.923116,0.835270,0.726149,0.606531,0.486752,0.375311,0.367879,0.477114,0.594521,0.711770,0.818731,0.904837,0.960789,0.980199,0.960789,0.904837,0.818731,0.711770,0.594521,0.477114,0.367879,0.346456,0.449329,0.559898,0.670320,0.771052,0.852144,0.904837,0.923116,0.904837,0.852144,0.771052,0.670320,0.559898,0.449329,0.346456,0.313486,0.406570,0.506617,0.606531,0.697676,0.771052,0.818731,0.835270,0.818731,0.771052,0.697676,0.606531,0.506617,0.406570,0.313486,0.272532,0.353455,0.440432,0.527292,0.606531,0.670320,0.711770,0.726149,0.711770,0.670320,0.606531,0.527292,0.440432,0.353455,0.272532,0.227638,0.295230,0.367879,0.440432,0.506617,0.559898,0.594521,0.606531,0.594521,0.559898,0.506617,0.440432,0.367879,0.295230,0.227638,0.182684,0.236928,0.295230,0.353455,0.406570,0.449329,0.477114,0.486752,0.477114,0.449329,0.406570,0.353455,0.295230,0.236928,0.182684,0.140858,0.182684,0.227638,0.272532,0.313486,0.346456,0.367879,0.375311,0.367879,0.346456,0.313486,0.272532,0.227638,0.182684,0.140858'
