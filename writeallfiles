@@ -42,6 +42,14 @@ then
     cp -u ./alacrittynix.yml ~/.config/alacritty/alacritty.yml
 
     cp -u ./vimrcnix ~/.vimrc
+elif hostname | grep -q portastation
+then
+    #echo portastation
+    cp -u ./configport.fish ~/.config/fish/config.fish
+
+    cp -u ./alacrittyport.yml ~/.config/alacritty/alacritty.yml
+
+    cp -u ./initport.lua ~/.config/nvim/init.lua
 else
     #echo mountains
     cp -u ./i3conf ~/.config/i3/config

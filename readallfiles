@@ -60,6 +60,17 @@ then
 
     #get vimrc
     cp -u ~/.vimrc ./vimrcnix
+elif hostname | grep -q portastation
+then
+    #echo portastation
+    #get bashrc
+    cp -u ~/.config/fish/config.fish ./configport.fish
+
+    #get alacritty config
+    cp -u ~/.config/alacritty/alacritty.yml ./alacrittyport.yml
+
+    #get neovim init.lua
+    cp -u ~/.config/nvim/init.lua ./initport.lua
 else
     #echo mountains
     #get the i3 config file
