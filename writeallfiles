@@ -42,6 +42,8 @@ then
     cp -u ./alacrittynix.yml ~/.config/alacritty/alacritty.yml
 
     cp -u ./vimrcnix ~/.vimrc
+
+    cp -u ./configuration.nix /etc/nixos/configuration.nix
 elif hostname | grep -q portastation
 then
     #echo portastation

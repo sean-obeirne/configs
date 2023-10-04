@@ -170,6 +170,9 @@ exec_always xbindkeys -p
 #firefox
 bindsym $mod+b exec firefox &
 
+#chrome
+bindsym $mod+c exec google-chrome-stable &
+
 #gimp
 bindsym $mod+g exec gimp &
 
@@ -208,7 +211,7 @@ bindsym $mod+e exec evince &
 #bindsym $mod+i exec cd ~/IntelliJ/idea-IC-183.5429.30/bin; bash idea.sh &
 
 # open nix package search
-bindsym $mod+n exec firefox https://search.nixos.org/packages
+bindsym $mod+n exec firefox --new-window https://search.nixos.org/packages
 
 #bindsym $mod+Shift+c exec calculator
 
