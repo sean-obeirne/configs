@@ -60,6 +60,9 @@ then
 
     #get vimrc
     cp -u ~/.vimrc ./vimrcnix
+
+    #get nix config
+    cp -u /etc/nixos/configuration.nix ./configuration.nix
 elif hostname | grep -q portastation
 then
     #echo portastation
